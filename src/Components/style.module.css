@@ -1,0 +1,37 @@
+.dark_mode {
+  position: relative;
+}
+
+.dark_mode_input {
+  display: none;
+}
+
+.dark_mode_label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dark_mode_label svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dark_mode_label svg:nth-child(2) {
+  display: none;
+}
+
+.dark_mode_input:checked + .dark_mode_label svg:nth-child(1) {
+  display: none;
+}
+
+.dark_mode_input:checked + .dark_mode_label svg:nth-child(2) {
+  display: block;
+}
+
+.dark_mode_label svg {
+  transition: transform 0.3s ease;
+}
+
+.dark_mode_input:checked + .dark_mode_label svg:nth-child(1) {
+  transform: rotate(180deg);
+}

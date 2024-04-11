@@ -1,0 +1,12 @@
+{
+    "header":{
+    "home": "Início",
+      "about": "Sobre",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "HomePage":{
+        "introduction": "Olá, sou Matheus Link, Desenvolvedor Front-End"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "introduction": "Hello, i'm Matheus Link, Front-End Developer"
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --body_bg: white;
+  --body_color: #000;
+  --link_color: navy;
+}
+
+*{
+  transition: all 0.3s ease-in-out;
+}
+
+[data-theme="dark"]{
+  --body_bg: #252525;
+   --body_color: #fff;
+  --link_color: cyan;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p{
+  color: var(--body_color);
+}
+
