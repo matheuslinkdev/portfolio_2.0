@@ -1,28 +1,53 @@
 :root {
-  --body_bg: white;
+  --body_bg: #e6e6e6;
   --body_color: #000;
   --link_color: navy;
 }
 
-*{
-  transition: all 0.3s ease-in-out;
+
+[data-theme="dark"] {
+  --body_bg: #252525;
+  --body_color: #fff;
+  --link_color: cyan;
 }
 
-[data-theme="dark"]{
-  --body_bg: #252525;
-   --body_color: #fff;
-  --link_color: cyan;
+* {
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  align-items: center;
+  max-width: 100dvw;
   min-height: 100vh;
+  background-color: var(--body_bg);
 }
 
-p{
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   color: var(--body_color);
 }
 
+p {
+  color: var(--body_color);
+}
+
+header{
+  background-color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,6 +1,6 @@
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
-import DarkMode from "./DarkMode";
+import DarkMode from "../../Theme/DarkMode";
 
 const Header = () => {
   const handleChangeLanguage = (lang: string) => {
@@ -11,14 +11,16 @@ const Header = () => {
   return (
     <header>
       {t("header.home")}
-      <button onClick={() => handleChangeLanguage("pt")}>
-        <ReactCountryFlag countryCode="BR" svg />
-      </button>
-      <button onClick={() => handleChangeLanguage("en")}>
-        <ReactCountryFlag countryCode="GB" svg />
-      </button>
+      <div>
+        <button onClick={() => handleChangeLanguage("pt")}>
+          <ReactCountryFlag countryCode="BR" svg />
+        </button>
+        <button onClick={() => handleChangeLanguage("en")}>
+          <ReactCountryFlag countryCode="GB" svg />
+        </button>
+      </div>
 
-      <DarkMode/>
+      <DarkMode />
     </header>
   );
 };

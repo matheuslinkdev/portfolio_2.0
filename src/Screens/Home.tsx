@@ -5,11 +5,11 @@ const Home = () => {
 const [t, i18n] = useTranslation("global")
 
   return (
-    <div>
+    <main>
         <p>
         {t("HomePage.introduction")}
         </p>
-    </div>
+    </main>
   )
 }
 
