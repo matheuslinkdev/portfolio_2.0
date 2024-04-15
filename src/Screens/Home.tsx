@@ -1,16 +1,16 @@
-import { useTranslation } from "react-i18next"
+import { Flex } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
-
-const [t, i18n] = useTranslation("global")
+  const [t, i18n] = useTranslation("global");
 
   return (
     <main>
-        <p>
-        {t("HomePage.introduction")}
-        </p>
+      <Flex className="flex-container">
+        <p>{t("HomePage.introduction")}</p>
+      </Flex>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
