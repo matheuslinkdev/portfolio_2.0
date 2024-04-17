@@ -7,6 +7,12 @@
     "contact": "Contact"
   },
   "HomePage": {
-    "introduction": "Hello, i'm Matheus Link, Front-End Developer"
+    "introduction": "Hello, i'm Matheus Link",
+    "stack": "Front-End Developer"
+  },
+  "Projects": {
+    "CryptoLine": "Cryptocurrency quote app, built with React Js, Vite, Chakra UI, and CoinGeckoApi.",
+    "F1Roster": "App where users can check information about the current Formula 1 season.",
+    "InovaTech": "Fictitious institutional website, built with NextJs, TypeScript, and Chakra UI."
   }
 }

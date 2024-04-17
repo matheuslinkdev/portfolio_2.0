@@ -40,7 +40,7 @@ main {
 
 .flex-container {
   background-color: tomato;
-  margin: 5dvh auto;
+  margin: 10dvh auto 5dvh;
   border-radius: 20px;
   min-height: 90dvh;
   width: 95%;
@@ -55,6 +55,7 @@ p {
 }
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;

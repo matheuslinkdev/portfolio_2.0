@@ -1,0 +1,39 @@
+--Ideias:
+
+Implementar um botão de "Ver Perfil" abaixo de minha foto, botão que ao ser clicado abre um modal com algumas infos minhas, como idade, copos de café tomados, fios de cabelo perdidos e etc...
+
+
+
+data/projects.tsx import { useTranslation } from "react-i18next";
+
+const [t, i18n] = useTranslation("global");
+
+const projects = [
+  {
+    title: "CryptoLine",
+    screenshotUrl: "",
+    description: (t("Projects.CryptoLine")),
+    GitHubLink: "",
+    deployLink: "",
+  },
+];
+
+export default projects;
+ useTranslation cannot be called at the top level, react hooks must be called in a react function component or a custom react hook function translations/pt/global.json {
+    "header":{
+    "home": "Início",
+      "about": "Sobre",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "HomePage":{
+        "introduction": "Olá, sou Matheus Link, Desenvolvedor Front-End"
+    },
+    "Projects": {
+      "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi.",
+      "F1Roster": "App onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1.",
+      "InovaTech": "Site institucional fictício, feito com NextJs, TypeScript e Chakra UI"
+    }
+}, how can i fix this to use the data in a rendering component ?
+

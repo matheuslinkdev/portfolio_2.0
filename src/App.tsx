@@ -10,11 +10,21 @@ function App() {
   return (
     <>
       <Header />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div id="homePage">
+        <Home />
+      </div>
+      <div id="aboutmePage">
+        <AboutMe />
+      </div>
+      <div id="skillsPage">
+        <Skills />
+      </div>
+      <div id="projectsPage">
+        <Projects />
+      </div>
+      <div id="contactPage">
+        <Contact />
+      </div>
     </>
   );
 }

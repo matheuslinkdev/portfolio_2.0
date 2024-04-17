@@ -7,6 +7,12 @@
       "contact": "Contato"
     },
     "HomePage":{
-        "introduction": "Olá, sou Matheus Link, Desenvolvedor Front-End"
+        "introduction": "Olá, eu sou o Matheus Link",
+        "stack": "Desenvolvedor Front-End"
+    },
+    "Projects": {
+      "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi.",
+      "F1Roster": "App onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1.",
+      "InovaTech": "Site institucional fictício, feito com NextJs, TypeScript e Chakra UI"
     }
 }

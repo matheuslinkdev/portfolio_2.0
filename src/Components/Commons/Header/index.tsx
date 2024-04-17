@@ -7,17 +7,29 @@ const Header = () => {
     i18n.changeLanguage(lang);
   };
 
+  const scrollIntoView = (id: string) => {
+    document.getElementById(id)!.scrollIntoView({ behavior: "smooth" });
+  };
+
   const [t, i18n] = useTranslation("global");
 
   return (
     <header>
       <div>
-        <ul style={{display: "flex"}}>
-          <li>{t("header.home")}</li>
-          <li>{t("header.about")}</li>
-          <li>{t("header.skills")}</li>
-          <li>{t("header.projects")}</li>
-          <li>{t("header.contact")}</li>
+        <ul style={{ display: "flex" }}>
+          <a onClick={() => scrollIntoView("homePage")}>{t("header.home")}</a>
+          <a onClick={() => scrollIntoView("aboutmePage")}>
+            {t("header.about")}
+          </a>
+          <a onClick={() => scrollIntoView("skillsPage")}>
+            {t("header.skills")}
+          </a>
+          <a onClick={() => scrollIntoView("projectsPage")}>
+            {t("header.projects")}
+          </a>
+          <a onClick={() => scrollIntoView("contactPage")}>
+            {t("header.contact")}
+          </a>
         </ul>
       </div>
       <div>
@@ -28,7 +40,6 @@ const Header = () => {
           <ReactCountryFlag countryCode="GB" svg />
         </button>
       </div>
-
       <DarkMode />
     </header>
   );
