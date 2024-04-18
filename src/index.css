@@ -1,22 +1,26 @@
 :root {
-  --body_bg: #e6e6e6;
-  --body_color: #000;
-  --link_color: navy;
+  --body_bg: var(--chakra-colors-white-200);
+  --body_color: var(--chakra-colors-black-800);
+  --link_color: var(--chakra-colors-black-900);
+  --lang-btn-bg: var(--chakra-colors-white-transparent-50);
+  --list-hover: var(--chakra-colors-blue-400);
 }
 
 [data-theme="dark"] {
-  --body_bg: #252525;
-  --body_color: #fff;
-  --link_color: cyan;
+  --body_bg: var(--chakra-colors-blue-990);
+  --body_color: var(--chakra-colors-white-200);
+  --link_color: var(--chakra-colors-white-100);
+   --lang-btn-bg: var(--chakra-colors-black-transparent-200);
+   --list-hover: var(--chakra-colors-blue-800);
 }
 
 * {
-  transition: all 0.3s ease-in-out;
+  transition: all .3s linear;
   font-family: "Poppins", sans-serif;
   max-width: 100%;
 }
 
-body {
+.App {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,13 +42,21 @@ main {
   align-items: center;
 }
 
+
+ li{
+   color: var(--link_color);
+  &:hover{
+    background-color: var(--list-hover);
+  }
+ }
+
 .flex-container {
   background-color: tomato;
   margin: 10dvh auto 5dvh;
   border-radius: 20px;
   min-height: 90dvh;
   width: 95%;
-  color: white;
+  color: var(--body_color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,15 +66,19 @@ p {
   color: var(--body_color);
 }
 
-header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8dvh;
-  background-color: blue;
-  width: 95%;
-  margin: 2px auto;
-  padding: 0 5px ;
-  border-radius: 10px;
+.header {
+  .lang-btn{
+    background-color: var(--lang-btn-bg);
+    font-size: 30px;
+  }
+
+}
+
+
+.flex-container.home{
+  background-image: linear-gradient(to right, var(--chakra-colors-blue-700) 20%, var(--chakra-colors-blue-990));
+
+  @media (max-width: 767px) {
+      background-image: linear-gradient(to bottom, var(--chakra-colors-blue-800) 20%, var(--chakra-colors-blue-990));
+  }
 }

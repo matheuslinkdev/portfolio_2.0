@@ -8,7 +8,10 @@
   },
   "HomePage": {
     "introduction": "Hello, i'm Matheus Link",
-    "stack": "Front-End Developer"
+    "stack": "Front-End Developer",
+    "modalBtn": "About Me",
+    "modalContent": "I am 19 years old, majoring in Computer Science, and have been studying programming since 2023, when I started learning logic and algorithms using VisualG. I've always been into the world of technology but never knew where to go until a cousin already established in the field recommended programming to me, and since then, I've been striving every day to become a Developer and above all, a successful person! Currently, I am part of a team of Freelancer friends, which I am sure is helping me to evolve more and more. 🚀",
+    "modalClose": "Close"
   },
   "Projects": {
     "CryptoLine": "Cryptocurrency quote app, built with React Js, Vite, Chakra UI, and CoinGeckoApi.",

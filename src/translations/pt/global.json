@@ -7,8 +7,11 @@
       "contact": "Contato"
     },
     "HomePage":{
-        "introduction": "Olá, eu sou o Matheus Link",
-        "stack": "Desenvolvedor Front-End"
+      "introduction": "Olá, eu sou o Matheus Link",
+      "stack": "Desenvolvedor Front-End",
+      "modalBtn": "Sobre Mim",
+      "modalContent": "Tenho 19 anos, curso Ciências da Computação e estudo programação desde 2023, onde comecei a estudar lógica e algoritmos utilizando o VisualG e aprendendo com o saudoso professor Gustavo Guanabara. Sempre curti o mundo da tecnologia mas nunca soube pra onde ir, até que um primo já consolidado na área me indicou a programação, e desde então venho me esforçando cada dia mais para me tornar um Desenvolvedor e acima de tudo uma pessoa de sucesso! Atualmente faço parte de uma equipe de amigos Freelancers, o que tenho certeza que está me ajudando a evoluir cada vez mais.🚀 ",
+      "modalClose": "Fechar"
     },
     "Projects": {
       "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi.",

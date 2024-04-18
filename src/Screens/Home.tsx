@@ -1,27 +1,49 @@
-import { Box, Flex, Image, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import AboutMeModal from "../Components/Layout/AboutMeModal";
 
 const Home = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <main>
-      <Flex className="flex-container" justifyContent="space-between" flexWrap="wrap-reverse">
-        <Box px="50px">
+      <Flex
+        className="flex-container home"
+        justifyContent="space-evenly"
+        flexWrap="wrap-reverse"
+      >
+        <Box
+          px="50px"
+          w={400}
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+        >
           <Text fontSize="xl">{t("HomePage.introduction")}</Text>
           <Text fontSize="xl">{t("HomePage.stack")}</Text>
           <button>Linkedin</button>
           <button>Github</button>
         </Box>
-        <Spacer/>
-        <Box px="50px">
+  
+        <Box
+          px="50px"
+          w={400}
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+        >
           <Image
             borderRadius="full"
-            boxSize="200px"
+            w={250}
+            maxW="45dvw"
+            h="auto"
             bgGradient="linear(to-r, blue.200, blue.800)"
             src="https://avatars.githubusercontent.com/u/122500941?s=400&u=1616f74cd49d584d299ac2595cc841f1849a03f0&v=4"
             alt="Dan Abramov"
           />
+          <AboutMeModal />
         </Box>
       </Flex>
     </main>

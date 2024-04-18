@@ -1,14 +1,15 @@
 import React from "react";
 import { FaRegMoon, FaRegSun } from "react-icons/fa";
 import styles from "./style.module.css";
+import { Center } from "@chakra-ui/react";
 
 const DarkMode = () => {
   const setDarkMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "dark");
+    document.querySelector("body")!.setAttribute("data-theme", "dark");
     localStorage.setItem("selectedTheme", "dark")
   };
   const setLightMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "light");
+    document.querySelector("body")!.setAttribute("data-theme", "light");
     localStorage.setItem("selectedTheme", "light");
   };
 
@@ -21,7 +22,7 @@ const DarkMode = () => {
   }
 
   return (
-    <div className={styles.dark_mode}>
+    <Center className={styles.dark_mode}>
       <input
         type="checkbox"
         className={styles.dark_mode_input}
@@ -33,7 +34,7 @@ const DarkMode = () => {
         <FaRegMoon color="#151f33" />
         <FaRegSun color="#ffdd00" />
       </label>
-    </div>
+    </Center>
   );
 };
 

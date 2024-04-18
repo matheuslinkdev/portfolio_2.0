@@ -1,7 +1,6 @@
 import Header from "./Components/Commons/Header";
 import Home from "./Screens/Home";
 import "./App.css";
-import AboutMe from "./Screens/AboutMe";
 import Skills from "./Screens/Skills";
 import Projects from "./Screens/Projects";
 import Contact from "./Screens/Contact";
@@ -10,11 +9,10 @@ function App() {
   return (
     <>
       <Header />
+    
+    <main className="App">
       <div id="homePage">
         <Home />
-      </div>
-      <div id="aboutmePage">
-        <AboutMe />
       </div>
       <div id="skillsPage">
         <Skills />
@@ -25,6 +23,7 @@ function App() {
       <div id="contactPage">
         <Contact />
       </div>
+    </main>
     </>
   );
 }
