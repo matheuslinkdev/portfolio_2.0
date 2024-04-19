@@ -10,12 +10,12 @@
   --body_bg: var(--chakra-colors-blue-990);
   --body_color: var(--chakra-colors-white-200);
   --link_color: var(--chakra-colors-white-100);
-   --lang-btn-bg: var(--chakra-colors-black-transparent-200);
-   --list-hover: var(--chakra-colors-blue-800);
+  --lang-btn-bg: var(--chakra-colors-black-transparent-200);
+  --list-hover: var(--chakra-colors-blue-800);
 }
 
 * {
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   font-family: "Poppins", sans-serif;
   max-width: 100%;
 }
@@ -42,13 +42,12 @@ main {
   align-items: center;
 }
 
-
- li{
-   color: var(--link_color);
-  &:hover{
+li {
+  color: var(--link_color);
+  &:hover {
     background-color: var(--list-hover);
   }
- }
+}
 
 .flex-container {
   background-color: tomato;
@@ -67,18 +66,24 @@ p {
 }
 
 .header {
-  .lang-btn{
+  .lang-btn {
     background-color: var(--lang-btn-bg);
     font-size: 30px;
   }
-
 }
 
-
-.flex-container.home{
-  background-image: linear-gradient(to right, var(--chakra-colors-blue-700) 20%, var(--chakra-colors-blue-990));
+.flex-container.home {
+  background-color: transparent;
 
   @media (max-width: 767px) {
-      background-image: linear-gradient(to bottom, var(--chakra-colors-blue-800) 20%, var(--chakra-colors-blue-990));
+    background-image: linear-gradient(
+      to bottom,
+      var(--chakra-colors-blue-800) 20%,
+      var(--chakra-colors-blue-950)
+    );
+
+      .content-box-home{
+    margin-top: -150px;
+  }
   }
 }

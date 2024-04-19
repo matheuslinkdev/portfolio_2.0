@@ -3,6 +3,12 @@
 Implementar um botão de "Ver Perfil" abaixo de minha foto, botão que ao ser clicado abre um modal com algumas infos minhas, como idade, copos de café tomados, fios de cabelo perdidos e etc...
 
 
+STATUS: 
+
+Header 90% -- Tentar implementar Modal assim como no sobre mim, mas com o botão sendo um menu hamburguer
+Modal ✅
+
+
 
 data/projects.tsx import { useTranslation } from "react-i18next";
 
