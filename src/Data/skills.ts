@@ -7,7 +7,11 @@ import {
   DiGit,
   DiReact,
 } from "react-icons/di";
-import { BiLogoTypescript, BiLogoFigma, BiLogoJavascript } from "react-icons/bi";
+import {
+  BiLogoTypescript,
+  BiLogoFigma,
+  BiLogoJavascript,
+} from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
 
 const skillsArray = [

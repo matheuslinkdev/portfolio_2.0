@@ -82,8 +82,8 @@ p {
       var(--chakra-colors-blue-950)
     );
 
-      .content-box-home{
-    margin-top: -150px;
-  }
+    .content-box-home {
+      margin-top: -150px;
+    }
   }
 }

@@ -1,21 +1,71 @@
-import Projects from "../../../Data/projects"
+import Projects from "../../../Data/projects";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Stack,
+  Heading,
+  Image,
+  Text,
+  Divider,
+  ButtonGroup,
+  Button,
+  Center,
+} from "@chakra-ui/react";
+import { redirectToUrl } from "../../../Utils/redirectUrl";
 
 const ProjectsCards = () => {
-
-  const projectsArray = Projects()
+  // Calling Projects function to get the array of projects
+  const projectsArray = Projects();
 
   return (
-    <div>
-      {projectsArray.map((project, index)=>{
-        return(
-          <li key={index}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-          </li>
-        )
-      })}
-    </div>
-  )
-}
+    <Center flexWrap="wrap" gap="15px" width="95%">
+      {projectsArray.map((project, index) => (
+        <Card key={index} maxW="sm" bgColor="blue.600" h="30rem">
+          <CardBody>
+            <Image
+              src={project.screenshotUrl}
+              alt={project.title}
+              borderRadius="lg"
+              opacity={!project.isFinished ? "40%" : ""}
+            />
+            {
+              !project.isFinished && (<Center position="absolute" top={20} w="90%"><Text>Work in progress</Text></Center>)
+            }
+            <Stack mt="6" spacing="3">
+              <Heading size="md">{project.title}</Heading>
+              <Text>{project.description}</Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter justifyContent="center">
+            <ButtonGroup spacing="2">
+              <Button
+                onClick={() => redirectToUrl(project.GitHubLink)}
+                bgColor="black.400"
+                color="white.200"
+                w="140px"
+                _hover={{ bgColor: "black.700" }}
+              >
+                Repo
+              </Button>
+              <Button
+                bgColor="blue.700"
+                color="white.200"
+                w="140px"
+                _hover={{ bgColor: "blue.800" }}
+                onClick={() => {
+                  project.deployLink ? redirectToUrl(project.deployLink) : "";
+                }}
+              >
+                {project.deployLink ? "Deploy" : "404"}
+              </Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+      ))}
+    </Center>
+  );
+};
 
-export default ProjectsCards
+export default ProjectsCards;

@@ -1,12 +1,14 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import ProjectsCards from '../Components/Fragments/ProjectsCards';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const [t] = useTranslation("global");
   return (
     <main>
-      <Flex className="flex-container">
-        <p>Projects</p>
-        <ProjectsCards/>
+      <Flex className="flex-container" bg="none" flexDir="column" minH="100dvh">
+        <Heading mb={10}>{t("Projects.ProjectsLabel")}</Heading>
+        <ProjectsCards />
       </Flex>
     </main>
   );

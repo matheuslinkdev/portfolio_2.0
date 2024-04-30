@@ -89,7 +89,7 @@ const Home = () => {
           >
             {buttonLinks.map((target, index) => {
               return (
-                <AnimatedComponent>
+                <AnimatedComponent key={index}>
                   <animated.div style={btnProps}>
                     <Button
                       key={index}
@@ -99,6 +99,7 @@ const Home = () => {
                       color="white.200"
                       _hover={{ bg: target.hoverBgColor }}
                       onClick={() => redirectToUrl(target.href)}
+                      aria-label={`${target.title} button`}
                     >
                       <Icon as={target.icon} mr={2}/>  {target.title}
                     </Button>

@@ -150,16 +150,18 @@ const Header = () => {
           className="lang-btn"
           variant="ghost"
           size="lg"
+          aria-label="Portugues"
         >
-          <ReactCountryFlag countryCode="BR" svg />
+          <ReactCountryFlag countryCode="BR" svg alt="Bandeira do Brasil" />
         </Button>
         <Button
           onClick={() => handleChangeLanguage("en")}
           className="lang-btn"
           variant="ghost"
           size="lg"
+          aria-label="English"
         >
-          <ReactCountryFlag countryCode="GB" svg />
+          <ReactCountryFlag countryCode="GB" svg alt="Great Britain Flag"/>
         </Button>
         <Spacer />
         <DarkMode />

@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Box, Center, Heading, Icon, Text } from "@chakra-ui/react";
+import { Center, Icon, Text } from "@chakra-ui/react";
 import skillsArray from "../../../Data/skills";
 
 const SkillCard = () => {
-
   return (
     <Center flexWrap="wrap" gap="15px" w="95%">
       {skillsArray.map((skill, index) => (
@@ -25,7 +23,12 @@ const SkillCard = () => {
               boxShadow: "0 0 10px var(--chakra-colors-blue-600)",
             }}
           />
-          <Text position="absolute" mt="14dvh" fontWeight={500} color="white.200">
+          <Text
+            position="absolute"
+            mt="14dvh"
+            fontWeight={500}
+            color="white.200"
+          >
             {skill.title}
           </Text>
         </Center>

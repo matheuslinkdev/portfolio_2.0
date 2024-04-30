@@ -1,21 +1,26 @@
 {
-    "header":{
+  "header": {
     "home": "Início",
-      "about": "Sobre",
-      "skills": "Habilidades",
-      "projects": "Projetos",
-      "contact": "Contato"
-    },
-    "HomePage":{
-      "introduction": "Olá, sou Matheus Link",
-      "stack": "Desenvolvedor Front-End",
-      "modalBtn": "Sobre Mim",
-      "modalContent": "Tenho 19 anos, curso Ciências da Computação e estudo programação desde 2023, onde comecei a estudar lógica e algoritmos utilizando o VisualG e aprendendo com o saudoso professor Gustavo Guanabara. Sempre curti o mundo da tecnologia mas nunca soube pra onde ir, até que um primo já consolidado na área me indicou a programação, e desde então venho me esforçando cada dia mais para me tornar um Desenvolvedor e acima de tudo uma pessoa de sucesso! Atualmente faço parte de uma equipe de amigos Freelancers, o que tenho certeza que está me ajudando a evoluir cada vez mais.🚀 ",
-      "modalClose": "Fechar"
-    },
-    "Projects": {
-      "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi.",
-      "F1Roster": "App onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1.",
-      "InovaTech": "Site institucional fictício, feito com NextJs, TypeScript e Chakra UI"
-    }
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "HomePage": {
+    "introduction": "Olá, sou Matheus Link",
+    "stack": "Desenvolvedor Front-End",
+    "modalBtn": "Sobre Mim",
+    "modalContent": "Tenho 19 anos, curso Ciências da Computação e estudo programação desde 2023, onde comecei a estudar lógica e algoritmos utilizando o VisualG e aprendendo com o saudoso professor Gustavo Guanabara. Sempre curti o mundo da tecnologia mas nunca soube pra onde ir, até que um primo já consolidado na área me indicou a programação, e desde então venho me esforçando cada dia mais para me tornar um Desenvolvedor e acima de tudo uma pessoa de sucesso! Atualmente faço parte de uma equipe de amigos Freelancers, o que tenho certeza que está me ajudando a evoluir cada vez mais.🚀 ",
+    "modalClose": "Fechar"
+  },
+  "Projects": {
+    "ProjectsLabel": "Projetos",
+    "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi, nele o usuário pode consultar informações atualizadas sobre criptomoedas.",
+    "F1Roster": "App onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1. Feito originalmente em React + Vite, estou migrando ele para Next JS.",
+    "InovaTech": "Site institucional fictício, feito com React e Vite, nele o usuário pode fazer uma navegação simples, onde o conteúdo é alterado conforme o usuário avança.",
+    "Polyngo": "Site fictício de uma instituição de ensino. Feito com React, Vite, Node, Express e Chakra UI. Onde o usuário pdoe consultar idiomas ensinados, formações e outras páginas comuns para o ramo.",
+    "EcoMatters": "Site fictício de uma organização ambiental, feito em React, Vite e utilizando ContextApi. Nele o usuário pode verificar assinaturas disponíveis e adicionar produtos da loja ao carrinho que possui a soma do valor total.",
+    "CadFunc": "Aplicação básica de Cadastro de funcionários com operação CRUD, feito com Node, Express e React. Nele o usuário pode acicionar informações sobre um funcionário como: Contrato, nome, salário e datas de incio e fim de contrato.",
+    "ByteBank": "Projeto desenvolvido por meio de um tutorial da Alura, nele são abordados os conceitos básicos de testes em React Js."
+  }
 }
