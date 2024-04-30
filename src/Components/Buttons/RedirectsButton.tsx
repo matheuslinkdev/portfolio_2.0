@@ -1,16 +1,13 @@
 import { Button } from "@chakra-ui/react"
+import { RedirectBtnProps } from "../../Types/global-types"
 
-interface Props {
-    label: string
-    link: string
-    textColor: string | number
-    bgColor: string | number
-    btnFunction: ()=> void
+const handleNavigate =(url: string)=>{
+  window.open(url, "_blank")
 }
 
-const RedirectButton = ({label, link, textColor, bgColor, btnFunction}: Props) => {
+const RedirectButton = ({label, link, textColor, bgColor, btnFunction}: RedirectBtnProps) => {
   return (
-    <Button>RedirectsButton</Button>
+    <Button onClick={()=> handleNavigate(link)}>{label}</Button>
   )
 }
 

@@ -1,5 +1,4 @@
 import { Flex } from '@chakra-ui/react';
-import React from 'react'
 import ProjectsCards from '../Components/Fragments/ProjectsCards';
 
 const Projects = () => {

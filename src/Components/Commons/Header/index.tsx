@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
 import DarkMode from "../../Theme/DarkMode";

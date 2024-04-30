@@ -2,16 +2,15 @@ import {
   DiHtml5,
   DiCss3,
   DiSass,
-  DiJavascript1,
   DiNodejsSmall,
   DiGithubBadge,
   DiGit,
   DiReact,
 } from "react-icons/di";
-import { BiLogoTypescript, BiLogoFigma } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoFigma, BiLogoJavascript } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
 
-const skills = [
+const skillsArray = [
   {
     icon: DiHtml5,
     title: "HTML5",
@@ -25,7 +24,7 @@ const skills = [
     title: "Sass",
   },
   {
-    icon: DiJavascript1,
+    icon: BiLogoJavascript,
     title: "JavaScript",
   },
   {
@@ -62,4 +61,4 @@ const skills = [
   },
 ];
 
-export default skills;
+export default skillsArray;

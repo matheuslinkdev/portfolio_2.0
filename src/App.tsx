@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Components/Commons/Header";
 import Home from "./Screens/Home";
 import "./App.css";
@@ -7,8 +6,9 @@ import Projects from "./Screens/Projects";
 import Contact from "./Screens/Contact";
 import { animated, useSpring } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
+import { AnimatedComponentProps } from "./Types/global-types";
 
-const AnimatedComponent = ({ children }: { children: React.ReactNode }) => {
+const AnimatedComponent = ({ children }: AnimatedComponentProps) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,

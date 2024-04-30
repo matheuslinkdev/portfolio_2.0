@@ -1,12 +1,13 @@
-import { Box, Button, Flex, Icon, Image, Spacer, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import AboutMeModal from "../Components/Layout/AboutMeModal";
 import { animated, useSpring } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { redirectToUrl } from "../Utils/redirectUrl";
+import { AnimatedComponentProps } from "../Types/global-types";
 
-const AnimatedComponent = ({ children }: { children: React.ReactNode }) => {
+const AnimatedComponent = ({ children }: AnimatedComponentProps) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -16,7 +17,6 @@ const AnimatedComponent = ({ children }: { children: React.ReactNode }) => {
     opacity: inView ? 1 : 0,
     transform: inView ? "translateX(0)" : "translateX(400px)",
   });
-
 
   return (
     <animated.div ref={ref} style={imgProps}>
@@ -47,8 +47,8 @@ const Home = () => {
 
   const props = useSpring({
     from: { transform: "translateY(-10px)" },
-    to: { transform: "translateY(10px)" },
-    config: { duration: 2000 },
+    to: { transform: "translateY(10px)"},
+    config: { duration: 3000 },
     loop: { reverse: true },
   });
 
