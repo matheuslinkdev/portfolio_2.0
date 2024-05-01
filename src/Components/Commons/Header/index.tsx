@@ -17,27 +17,30 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [headerScrollY, setHeaderScrollY] = useState(80)
+  const [headerScrollY, setHeaderScrollY] = useState(0); // Initialize scroll position to 0
 
-   useEffect(() => {
-     const handleScroll = () => {
-       setHeaderScrollY(window.scrollY);
-     };
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeaderScrollY(window.scrollY);
+    };
 
-     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleChangeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
 
   const scrollIntoView = (id: string) => {
-    document.getElementById(id)!.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen(false);
+    }
   };
 
   const [t, i18n] = useTranslation("global");
@@ -56,8 +59,8 @@ const Header = () => {
       w="100%"
       position="fixed"
       zIndex="30"
-      bg={scrollY > 80 ? "blue.transparent.200" : "transparent"}
-      backdropFilter={scrollY > 80 ? "blur(5px)" : "none"}
+      bg={headerScrollY > 80 ? "blue.transparent.200" : "transparent"} // Change background color based on scroll position
+      backdropFilter={headerScrollY > 80 ? "blur(5px)" : "none"} // Apply backdrop filter based on scroll position
     >
       {/* Hamburger menu for small screens */}
       <Box display={{ base: "block", md: "none" }}>
@@ -81,47 +84,43 @@ const Header = () => {
       </Box>
 
       {/* Overlay and navigation links for small screens when menu is open */}
-      {menuOpen && (
-        <>
-          <Box
-            position="fixed"
-            top="0"
-            left="0"
-            width="100%"
-            height="100%"
-            bg="rgba(0, 0, 0, 0.5)"
-            zIndex="20" // Ensure this zIndex is lower than the header zIndex
-            onClick={() => setMenuOpen(false)}
-          />
-          <Center
-            style={{
-              display: "flex",
-              position: "fixed",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              zIndex: "25", // Ensure this zIndex is higher than the overlay zIndex
-            }}
-          >
-            <List
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              onClick={() => setMenuOpen(false)} // Close the menu after clicking a link
+      <Center
+        style={{
+          display: menuOpen ? "flex" : "none",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          zIndex: "25",
+          backgroundColor: "rgba(0, 0, 0, 0.9)",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+        onClick={() => setMenuOpen(false)}
+      >
+        <List alignItems="center" textAlign="center">
+          {links.map((link) => (
+            <ListItem
+              key={link.id}
+              m="20px 0"
+              onClick={() => scrollIntoView(link.id)}
+              style={{ cursor: "pointer", fontWeight: 600, fontSize: "1.2rem" }}
             >
-              {links.map((link) => (
-                <ListItem key={link.id} m="5px 0">
-                  {link.label}
-                </ListItem>
-              ))}
-            </List>
-          </Center>
-        </>
-      )}
+              {link.label}
+            </ListItem>
+          ))}
+        </List>
+      </Center>
 
       {/* Navigation links for larger screens */}
       <Center style={{ display: "flex" }}>
-        <List display={{ base: "none", md: "flex" }} alignItems="center" _hover={{cursor: "pointer"}} h="100%">
+        <List
+          display={{ base: "none", md: "flex" }}
+          alignItems="center"
+          _hover={{ cursor: "pointer" }}
+          h="100%"
+        >
           {links.map((link) => (
             <ListItem
               key={link.id}
@@ -132,7 +131,7 @@ const Header = () => {
               justifyContent="center"
               alignItems="center"
               m={{ base: "5px 0", md: "0 2px" }}
-              _hover={{ cursor: "pointer"}}
+              _hover={{ cursor: "pointer" }}
               fontWeight={600}
               onClick={() => scrollIntoView(link.id)}
             >
@@ -161,7 +160,7 @@ const Header = () => {
           size="lg"
           aria-label="English"
         >
-          <ReactCountryFlag countryCode="GB" svg alt="Great Britain Flag"/>
+          <ReactCountryFlag countryCode="GB" svg alt="Great Britain Flag" />
         </Button>
         <Spacer />
         <DarkMode />

@@ -1,10 +1,25 @@
-import { FaWhatsapp, FaLinkedinIn, FaGithub, FaGitAlt } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-const contacts = [
+export const contacts = [
   {
-    title: "",
-    icon: "",
+    title: "WhatsApp",
+    icon: FaWhatsapp,
+    href: "",
+  },
+  {
+    title: "LinkedIn",
+    icon: FaLinkedinIn,
+    href: "",
+  },
+  {
+    title: "GitHub",
+    icon: FaGithub,
+    href: "",
+  },
+  {
+    title: "Gmail",
+    icon: SiGmail,
     href: "",
   },
 ];

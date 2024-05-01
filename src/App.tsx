@@ -43,9 +43,7 @@ function App() {
           </AnimatedComponent>
         </div>
         <div id="projectsPage">
-          <AnimatedComponent>
             <Projects />
-          </AnimatedComponent>
         </div>
         <div id="contactPage">
           <AnimatedComponent>

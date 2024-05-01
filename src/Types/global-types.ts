@@ -10,7 +10,7 @@ export interface AnimatedComponentProps {
 export interface RedirectBtnProps {
   label: string;
   link: string;
-  textColor: string | number;
-  bgColor: string | number;
+  textColor: string;
+  bgColor: string;
   btnFunction: () => void;
 }

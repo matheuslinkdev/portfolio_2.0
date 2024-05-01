@@ -51,9 +51,9 @@ li {
 
 .flex-container {
   background-color: tomato;
-  margin: 10dvh auto 5dvh;
   border-radius: 20px;
   min-height: 90dvh;
+  margin: 5dvh auto;
   width: 95%;
   color: var(--body_color);
   display: flex;

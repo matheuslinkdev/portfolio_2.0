@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegMoon, FaRegSun } from "react-icons/fa";
 import styles from "./style.module.css";
 import { Center } from "@chakra-ui/react";
@@ -17,9 +16,9 @@ const DarkMode = () => {
 
   selectedTheme === "dark" ? setDarkMode() : setLightMode()
 
-  const toggleTheme = (e)=>{
-    e.target.checked ? setDarkMode() : setLightMode()
-  }
+  const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.target.checked ? setDarkMode() : setLightMode();
+  };
 
   return (
     <Center className={styles.dark_mode}>

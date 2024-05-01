@@ -5,9 +5,9 @@ const handleNavigate =(url: string)=>{
   window.open(url, "_blank")
 }
 
-const RedirectButton = ({label, link, textColor, bgColor, btnFunction}: RedirectBtnProps) => {
+const RedirectButton = ({label, link, textColor, bgColor}: RedirectBtnProps) => {
   return (
-    <Button onClick={()=> handleNavigate(link)}>{label}</Button>
+    <Button onClick={()=> handleNavigate(link)} color={textColor} bgColor={bgColor}>{label}</Button>
   )
 }
 

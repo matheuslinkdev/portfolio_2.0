@@ -22,5 +22,12 @@
     "EcoMatters": "Site fictício de uma organização ambiental, feito em React, Vite e utilizando ContextApi. Nele o usuário pode verificar assinaturas disponíveis e adicionar produtos da loja ao carrinho que possui a soma do valor total.",
     "CadFunc": "Aplicação básica de Cadastro de funcionários com operação CRUD, feito com Node, Express e React. Nele o usuário pode acicionar informações sobre um funcionário como: Contrato, nome, salário e datas de incio e fim de contrato.",
     "ByteBank": "Projeto desenvolvido por meio de um tutorial da Alura, nele são abordados os conceitos básicos de testes em React Js."
+  },
+  "Form":{
+    "nameLabel": "Seu Nome:",
+    "msgLabel": "Sua Mensagem:",
+    "errorMsg": "Preencha esse campo !",
+    "textAreaPlaceholder": "Ví seu portfólio e gostaria de lhe fornecer um feedback...",
+    "buttonLabel": "Enviar Mensagem"
   }
 }

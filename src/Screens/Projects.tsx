@@ -6,7 +6,7 @@ const Projects = () => {
   const [t] = useTranslation("global");
   return (
     <main>
-      <Flex className="flex-container" bg="none" flexDir="column" minH="100dvh">
+      <Flex className="flex-container" bg="none" flexDir="column" h="100%">
         <Heading mb={10}>{t("Projects.ProjectsLabel")}</Heading>
         <ProjectsCards />
       </Flex>

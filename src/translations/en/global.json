@@ -22,5 +22,12 @@
     "EcoMatters": "Fictitious environmental organization website, built with React, Vite, and utilizing ContextApi. Users can check available subscriptions and add products from the store to the cart, which has the total value sum.",
     "CadFunc": "Basic employee registration CRUD application, built with Node, Express, and React. Users can add information about an employee such as: Contract, name, salary, and start and end contract dates.",
     "ByteBank": "Project developed through an Alura tutorial, covering basic testing concepts in React Js."
+  },
+  "Form":{
+    "nameLabel": "Your Name:",
+    "msgLabel": "Your Message:",
+    "errorMsg": "Fill this field!",
+    "textAreaPlaceholder": "I saw you portfolio and would like to give you a feedback...",
+    "buttonLabel": "Send Message"
   }
 }
