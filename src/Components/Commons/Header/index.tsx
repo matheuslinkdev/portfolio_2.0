@@ -104,6 +104,7 @@ const Header = () => {
             <ListItem
               key={link.id}
               m="20px 0"
+              color="white.200"
               onClick={() => scrollIntoView(link.id)}
               style={{ cursor: "pointer", fontWeight: 600, fontSize: "1.2rem" }}
             >
