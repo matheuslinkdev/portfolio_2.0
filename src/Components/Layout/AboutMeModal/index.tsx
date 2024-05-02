@@ -25,8 +25,8 @@ const AboutMeModal = () => {
         onClick={onOpen}
         mt={5}
         bg="blue.500"
-        w={200}
-        h={50}
+        w={150}
+        h="42px"
         color="white.300"
         fontWeight={500}
         fontSize="lg"

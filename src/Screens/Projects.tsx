@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <main>
       <Flex className="flex-container" bg="none" flexDir="column" h="100%">
-        <Heading mb={10}>{t("Projects.ProjectsLabel")}</Heading>
+        <Heading mb={10} fontWeight={400} size="md">{t("Projects.ProjectsLabel")}</Heading>
         <ProjectsCards />
       </Flex>
     </main>

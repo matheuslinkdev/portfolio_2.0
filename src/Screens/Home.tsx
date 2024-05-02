@@ -63,27 +63,30 @@ const Home = () => {
       <Flex
         className="flex-container home"
         alignItems="center"
-        justifyContent="space-around"
+        justifyContent={{ base: "center", md: "space-around" }}
         flexWrap="wrap-reverse"
+        mt={20}
       >
         <Box
-          px="50px"
+          px="10px"
           w={450}
-          maxWidth="95dvw"
+          maxWidth="100%"
           display="flex"
           flexWrap="wrap"
           justifyContent="center"
           alignItems="center"
           className="content-box-home"
         >
-          <Text fontSize="3xl">{t("HomePage.introduction")}</Text>
-          <Text fontSize="2xl" color="blue.300">
+          <Text fontSize="3xl" fontWeight={600}>
+            {t("HomePage.introduction")}
+          </Text>
+          <Text fontSize="2xl" color="blue.300" mt={2}>
             {t("HomePage.stack")}
           </Text>
           <Flex
-            width="300px"
+            width="100%"
             display="flex"
-            justifyContent="space-evenly"
+            justifyContent="center"
             alignItems="center"
             m="15px auto"
           >
@@ -93,15 +96,16 @@ const Home = () => {
                   <animated.div style={btnProps}>
                     <Button
                       key={index}
-                      w="130px"
-                      m="1 auto"
+                      w="140px"
+                      mt={2}
+                      mx={2}
                       bgColor={target.backgroundColor}
                       color="white.200"
                       _hover={{ bg: target.hoverBgColor }}
                       onClick={() => redirectToUrl(target.href)}
                       aria-label={`${target.title} button`}
                     >
-                      <Icon as={target.icon} mr={2}/>  {target.title}
+                      <Icon as={target.icon} mr={2} /> {target.title}
                     </Button>
                   </animated.div>
                 </AnimatedComponent>
@@ -123,12 +127,12 @@ const Home = () => {
             <animated.div style={props}>
               <Image
                 borderRadius="full"
-                w={250}
-                maxW="45dvw"
+                w={220}
+                maxW="50dvw"
                 h="auto"
                 bgGradient="linear(to-r, blue.200, blue.800)"
                 src="https://avatars.githubusercontent.com/u/122500941?s=400&u=1616f74cd49d584d299ac2595cc841f1849a03f0&v=4"
-                alt="Dan Abramov"
+                alt="Matheus Link"
               />
             </animated.div>
           </AnimatedComponent>

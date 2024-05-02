@@ -10,16 +10,17 @@
     "introduction": "Hello, i'm Matheus Link",
     "stack": "Front-End Developer",
     "modalBtn": "About Me",
-    "modalContent": "I am 19 years old, majoring in Computer Science, and have been studying programming since 2023, when I started learning logic and algorithms using VisualG. I've always been into the world of technology but never knew where to go until a cousin already established in the field recommended programming to me, and since then, I've been striving every day to become a Developer and above all, a successful person! Currently, I am part of a team of Freelancer friends, which I am sure is helping me to evolve more and more. 🚀",
+    "modalContent": "I am 19 years old, majoring in Computer Science, and have been studying programming since 2023, when I started learning logic and algorithms using VisualG. I've always been into the world of technology but never knew where to go until a cousin already established in the field recommended programming to me, and since then, I've been striving every day to become a Developer and above all, a successful person! Currently, I am part of HX Solucoes, a team of Freelancer friends, which I am sure is helping me to evolve more and more. 🚀",
     "modalClose": "Close"
   },
+  "Skills": "Here you can see the technologies that I feel comfortable using in my daily routine currently.",
   "Projects": {
-    "ProjectsLabel": "Projects",
+    "ProjectsLabel": "Here you can see some projects that i've built during this journey.",
     "CryptoLine": "Cryptocurrency quote app, built with React Js, Vite, Chakra UI, and CoinGeckoApi. Users can consult updated information about cryptocurrencies.",
     "F1Roster": "App where users can access information about the current Formula 1 season. Originally built with React + Vite, I'm migrating it to Next JS.",
     "InovaTech": "Fictitious institutional website, built with React and Vite. Users can navigate through simple navigation, where the content changes as they progress.",
     "Polyngo": "Fictitious educational institution website. Built with React, Vite, Node, Express, and Chakra UI. Users can consult languages taught, formations, and other common pages for the field.",
-    "EcoMatters": "Fictitious environmental organization website, built with React, Vite, and utilizing ContextApi. Users can check available subscriptions and add products from the store to the cart, which has the total value sum.",
+    "EcoMatters": "Fictitious environmental organization website, built with React, Vite, and utilizing ContextApi. Users can add products from the store to the cart, which has the total value sum.",
     "CadFunc": "Basic employee registration CRUD application, built with Node, Express, and React. Users can add information about an employee such as: Contract, name, salary, and start and end contract dates.",
     "ByteBank": "Project developed through an Alura tutorial, covering basic testing concepts in React Js."
   },
@@ -29,5 +30,6 @@
     "errorMsg": "Fill this field!",
     "textAreaPlaceholder": "I saw you portfolio and would like to give you a feedback...",
     "buttonLabel": "Send Message"
-  }
+  }, 
+  "Contact": "Contact me through one of the means listed below or quickly send me an email using the form! Your message will be very important to me."
 }

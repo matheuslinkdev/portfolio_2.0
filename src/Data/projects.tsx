@@ -34,7 +34,7 @@ const Projects = () => {
       screenshotUrl: "https://i.ibb.co/52fXbH7/ecomatters.png",
       description: t("Projects.EcoMatters"),
       GitHubLink: "https://github.com/matheuslinkdev/ecomatters-react",
-      deployLink: "",
+      deployLink: "https://matheuslinkdev.github.io/ecomatters-react/loja",
       isFinished: true,
     },
     {

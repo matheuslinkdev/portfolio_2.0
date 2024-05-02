@@ -19,21 +19,30 @@ const ProjectsCards = () => {
   const projectsArray = Projects();
 
   return (
-    <Center flexWrap="wrap" gap="15px" width="95%">
+    <Center flexWrap="wrap" gap="25px" width="95%">
       {projectsArray.map((project, index) => (
-        <Card key={index} maxW="sm" bgColor="blue.600" h="30rem">
+        <Card
+          key={index}
+          maxW="sm"
+          bgColor="none"
+          h="30rem"
+          border="3px solid var(--chakra-colors-blue-300)"
+        >
           <CardBody>
             <Image
               src={project.screenshotUrl}
               alt={project.title}
-              borderRadius="lg"
+              borderRadius="0"
+              border="5px solid var(--chakra-colors-black-800)"
               opacity={!project.isFinished ? "40%" : ""}
             />
-            {
-              !project.isFinished && (<Center position="absolute" top={20} w="90%"><Text>Work in progress</Text></Center>)
-            }
+            {!project.isFinished && (
+              <Center position="absolute" top={20} w="90%">
+                <Text>Work in progress</Text>
+              </Center>
+            )}
             <Stack mt="6" spacing="3">
-              <Heading size="md">{project.title}</Heading>
+              <Heading fontSize="1.4rem" fontWeight={400}>{project.title}</Heading>
               <Text>{project.description}</Text>
             </Stack>
           </CardBody>

@@ -72,13 +72,21 @@ const Header = () => {
           {menuOpen ? (
             <Icon
               as={IoMdClose}
-              color="orange.600"
+              color="orange.500"
+              position="absolute"
               w={35}
               h={35}
               zIndex={999}
             />
           ) : (
-            <Icon as={IoMdMenu} color="orange.600" w={35} h={35} zIndex={999} />
+            <Icon
+              as={IoMdMenu}
+              color="orange.500"
+              position="absolute"
+              w={35}
+              h={35}
+              zIndex={999}
+            />
           )}
         </Button>
       </Box>
@@ -103,7 +111,7 @@ const Header = () => {
           {links.map((link) => (
             <ListItem
               key={link.id}
-              m="20px 0"
+              m="25px 0"
               color="white.200"
               onClick={() => scrollIntoView(link.id)}
               style={{ cursor: "pointer", fontWeight: 600, fontSize: "1.2rem" }}

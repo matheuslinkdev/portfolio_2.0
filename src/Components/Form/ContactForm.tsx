@@ -105,7 +105,7 @@ return (
         <Textarea
           placeholder={t("Form.textAreaPlaceholder")}
           w={400}
-          maxW="95dvw"
+          maxW="95%"
           color="black.400"
           bgColor="white.200"
           h={200}
