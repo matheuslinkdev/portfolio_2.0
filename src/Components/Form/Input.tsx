@@ -18,7 +18,7 @@ const InputField = ({
 }: InputFieldProps) => {
   return (
     <>
-      <FormLabel mt={5}>{inputLabel}</FormLabel>
+      <FormLabel mt={5} color="white.200">{inputLabel}</FormLabel>
       <Input
         type={inputType}
         bgColor="white.400"

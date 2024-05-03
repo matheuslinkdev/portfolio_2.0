@@ -16,7 +16,8 @@ const Contact = () => {
         bgColor="blue.800"
         flexDir={{ base: "column", md: "row" }}
         justifyContent={{ base: "center", md: "space-evenly" }}
-        w="95%"
+        w="99%"
+        py={10}
       >
         <ContactCard />
         <ContactForm />

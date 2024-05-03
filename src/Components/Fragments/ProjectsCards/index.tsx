@@ -7,10 +7,10 @@ import {
   Heading,
   Image,
   Text,
-  Divider,
   ButtonGroup,
   Button,
   Center,
+  Box,
 } from "@chakra-ui/react";
 import { redirectToUrl } from "../../../Utils/redirectUrl";
 
@@ -29,26 +29,43 @@ const ProjectsCards = () => {
           border="3px solid var(--chakra-colors-blue-300)"
         >
           <CardBody>
-            <Image
-              src={project.screenshotUrl}
-              alt={project.title}
-              borderRadius="0"
-              border="5px solid var(--chakra-colors-black-800)"
-              opacity={!project.isFinished ? "40%" : ""}
-            />
+            <Box
+              width="100%"
+              h="35%"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              overflow="hidden"
+              position="absolute"
+              top={0}
+              left={0}
+            >
+              <Image
+                src={project.screenshotUrl}
+                alt={project.title}
+                loading="lazy"
+                borderRadius="0"
+                width="640px"
+                height="300px"
+                objectFit="contain"
+                opacity={!project.isFinished ? "40%" : ""}
+              />
+            </Box>
+
             {!project.isFinished && (
-              <Center position="absolute" top={20} w="90%">
+              <Center position="absolute" top={20} w="85%">
                 <Text>Work in progress</Text>
               </Center>
             )}
-            <Stack mt="6" spacing="3">
-              <Heading fontSize="1.4rem" fontWeight={400}>{project.title}</Heading>
+            <Stack mt="170">
+              <Heading fontSize="1.4rem" fontWeight={400}>
+                {project.title}
+              </Heading>
               <Text>{project.description}</Text>
             </Stack>
           </CardBody>
-          <Divider />
-          <CardFooter justifyContent="center">
-            <ButtonGroup spacing="2">
+          <CardFooter justifyContent="center" position="absolute" bottom={0} left={0} right={0}>
+            <ButtonGroup spacing="2" m="auto">
               <Button
                 onClick={() => redirectToUrl(project.GitHubLink)}
                 bgColor="black.400"
@@ -56,7 +73,7 @@ const ProjectsCards = () => {
                 w="140px"
                 _hover={{ bgColor: "black.700" }}
               >
-                Repo
+                {project.GitHubLink ? "GitHub" : "404"}
               </Button>
               <Button
                 bgColor="blue.700"

@@ -15,7 +15,7 @@ const AnimatedComponent = ({ children }: AnimatedComponentProps) => {
 
   const imgProps = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0)" : "translateX(400px)",
+    transform: inView ? "translateX(0)" : "translateX(100px)",
   });
 
   return (
@@ -29,7 +29,7 @@ const buttonLinks = [
   {
     title: "Linkedin",
     href: "https://www.linkedin.com/in/matheus-link-21b3a4265/",
-    backgroundColor: "blue.600",
+    backgroundColor: "blue.700",
     hoverBgColor: "blue.800",
     icon: FaLinkedin,
   },
@@ -53,7 +53,7 @@ const Home = () => {
   });
 
     const btnProps = useSpring({
-      from: { transform: "translateX(50px)" },
+      from: { transform: "translateX(10px)" },
       to: { transform: "translateY(0px)" },
     });
 
@@ -65,7 +65,7 @@ const Home = () => {
         alignItems="center"
         justifyContent={{ base: "center", md: "space-around" }}
         flexWrap="wrap-reverse"
-        mt={{ base: "6dvh", md: "" }}
+        mt={{ base: "7dvh", md: "0" }}
       >
         <Box
           px="10px"
@@ -100,7 +100,7 @@ const Home = () => {
                       mt={2}
                       mx={2}
                       bgColor={target.backgroundColor}
-                      color="white.200"
+                      color="white.100"
                       _hover={{ bg: target.hoverBgColor }}
                       onClick={() => redirectToUrl(target.href)}
                       aria-label={`${target.title} button`}
@@ -127,12 +127,12 @@ const Home = () => {
             <animated.div style={props}>
               <Image
                 borderRadius="full"
-                w={220}
-                maxW="50dvw"
-                h="auto"
+                width="200px"
+                height="200px"
                 bgGradient="linear(to-r, blue.200, blue.800)"
                 src="https://avatars.githubusercontent.com/u/122500941?s=400&u=1616f74cd49d584d299ac2595cc841f1849a03f0&v=4"
                 alt="Matheus Link"
+                loading="lazy"
               />
             </animated.div>
           </AnimatedComponent>

@@ -66,6 +66,7 @@ const Header = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           variant="ghost"
           size="lg"
+          aria-label="menu-icon"
         >
           {menuOpen ? (
             <Icon

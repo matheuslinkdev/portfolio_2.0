@@ -30,11 +30,10 @@
   margin: 0;
   background-color: var(--body_bg);
   color: var(--body_color);
-  overflow: hidden;
 }
 
 main {
-  min-height: 100dvh;
+  min-height: 90dvh;
   width: 100dvw;
   text-align: center;
   display: flex;

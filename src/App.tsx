@@ -16,7 +16,7 @@ const AnimatedComponent = ({ children }: AnimatedComponentProps) => {
 
   const props = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0)" : "translateX(-150px)",
+    transform: inView ? "translateX(0)" : "translateX(-10px)",
   });
 
   return (
@@ -30,7 +30,6 @@ function App() {
   return (
     <>
       <Header />
-
       <main className="App">
         <AnimatedComponent>
           <div id="homePage">

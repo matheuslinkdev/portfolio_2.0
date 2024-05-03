@@ -1,4 +1,3 @@
-// projects.tsx
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -14,20 +13,20 @@ const Projects = () => {
       isFinished: false,
     },
     {
-      title: "F1Roster",
-      screenshotUrl: "https://i.ibb.co/Mh76d1q/f1roster.png",
-      description: t("Projects.F1Roster"),
-      GitHubLink: "https://github.com/matheuslinkdev/f1_roster",
-      deployLink: "matheuslinkdev.github.io/f1_roster/",
-      isFinished: true,
-    },
-    {
       title: "Polyngo",
       screenshotUrl: "https://i.ibb.co/sHC0fQ6/polyngo.png",
       description: t("Projects.Polyngo"),
       GitHubLink: "https://github.com/matheuslinkdev/Polyngo",
       deployLink: "",
       isFinished: false,
+    },
+    {
+      title: "F1Roster",
+      screenshotUrl: "https://i.ibb.co/Mh76d1q/f1roster.png",
+      description: t("Projects.F1Roster"),
+      GitHubLink: "https://github.com/matheuslinkdev/f1_roster",
+      deployLink: "https://matheuslinkdev.github.io/f1_roster/",
+      isFinished: true,
     },
     {
       title: "EcoMatters",

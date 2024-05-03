@@ -24,13 +24,13 @@ const AboutMeModal = () => {
       <Button
         onClick={onOpen}
         mt={5}
-        bg="blue.500"
+        bg="blue.700"
         w={150}
         h="42px"
         color="white.300"
         fontWeight={500}
         fontSize="lg"
-        _hover={{ bg: "blue.900", transform: "scale(1.07)"}}
+        _hover={{ bg: "blue.900", transform: "scale(1.03)"}}
       >
         {t("HomePage.modalBtn")} <Icon as={MdEmojiPeople} fontSize={20}/>
       </Button>

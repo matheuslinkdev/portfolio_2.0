@@ -71,7 +71,7 @@ const sendEmail: React.FormEventHandler<HTMLFormElement> = (e) => {
 
 return (
   <Center>
-    <form onSubmit={sendEmail}>
+    <form onSubmit={sendEmail} >
       <FormControl
         display="flex"
         flexDir="column"
@@ -101,7 +101,7 @@ return (
           <FormErrorMessage>{t("Form.errorMsg")}</FormErrorMessage>
         )}
 
-        <FormLabel mt={5}>{t("Form.msgLabel")}</FormLabel>
+        <FormLabel mt={5} color="white.200">{t("Form.msgLabel")}</FormLabel>
         <Textarea
           placeholder={t("Form.textAreaPlaceholder")}
           w={400}
@@ -118,7 +118,7 @@ return (
         {emptyField && (
           <FormErrorMessage>{t("Form.errorMsg")}</FormErrorMessage>
         )}
-        <Button type="submit" mt={5} w={150} bgColor="blue.600">
+        <Button type="submit" mt={5} w={150} bgColor="blue.200" _hover={{bgColor: "blue.100"}}>
           {t("Form.buttonLabel")}
         </Button>
       </FormControl>
