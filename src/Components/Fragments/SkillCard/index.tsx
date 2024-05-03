@@ -1,37 +1,61 @@
 import { Center, Icon, Text } from "@chakra-ui/react";
+import { useTrail, animated } from "@react-spring/web";
 import skillsArray from "../../../Data/skills";
+import { useInView } from "react-intersection-observer";
 
 const SkillCard = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  // Define a configuração da animação
+  const config = { mass: 5, tension: 2000, friction: 200 };
+
+  // Define as configurações iniciais de cada card
+  const trail = useTrail(skillsArray.length, {
+    config,
+    opacity: inView ? 1 : 0,
+    x: inView ? 0 : (index: number) => (index % 2 === 0 ? 300 : -300),
+    from: { opacity: 0, x: -100 }, // Animação inicial para todos os cards
+  });
+
   return (
-    <Center flexWrap="wrap" gap="15px" w="95%">
-      {skillsArray.map((skill, index) => (
-        <Center key={index} title={skill.title} my="7dvh" mx="10dvw">
-          <Icon
-            as={skill.icon}
-            style={{
-              fontSize: "50px",
-              color: "var(--chakra-colors-blue-950)",
-              backgroundColor: "var(--chakra-colors-blue-400)",
-              width: "4rem",
-              height: "4rem",
-              borderRadius: "50%",
-              padding: "7px",
-            }}
-            position="absolute"
-            _hover={{
-              transform: "scale(1.05)",
-              boxShadow: "0 0 10px var(--chakra-colors-blue-600)",
-            }}
-          />
-          <Text
-            position="absolute"
-            mt="14dvh"
-            fontWeight={500}
-            color="white.200"
-          >
-            {skill.title}
-          </Text>
-        </Center>
+    <Center ref={ref} flexWrap="wrap" gap="10px 5px" w="500px" maxW="100%">
+      {trail.map((props, index) => (
+        <animated.div
+          key={index}
+          style={{
+            ...props,
+            position: "relative",
+          }}
+        >
+          <Center title={skillsArray[index].title} backgroundColor="var(--chakra-colors-black-800)"
+                width="10rem"
+                height="3.5rem"
+                padding="7px"
+                borderRadius="2px"
+                justifyContent="space-evenly">
+            <Icon
+              as={skillsArray[index].icon}
+              style={{
+                fontSize: "40px",
+                color: "var(--chakra-colors-blue-300)",
+              }}
+              
+              _hover={{
+                transform: "scale(1.05)",
+                filter: "drop-shadow(0 0 5px var(--chakra-colors-blue-700))",
+              }}
+            />
+            <Text
+              fontWeight={500}
+              color="white.200"
+            >
+              {skillsArray[index].title}
+            </Text>
+          </Center>
+        </animated.div>
       ))}
     </Center>
   );

@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import SkillCard from "./../Components/Fragments/SkillCard/index.tsx";
 import { useTranslation } from "react-i18next";
 
@@ -10,12 +10,13 @@ const Skills = () => {
         className="flex-container"
         borderRadius="none"
         bgColor="blue.800"
-        flexDir="column"
         w="100%"
-      >
-        <Heading mb={20} fontWeight={400} color="white.200" size="md" px={5}>
-          {t("Skills")}
-        </Heading>
+        justifyContent="space-evenly"
+        flexWrap="wrap"
+        >
+        <Text textAlign={{base: "center", md: "start"}} w="500px" maxW="95dvw" color="white.200">
+            {t("Skills")}
+        </Text>
         <SkillCard />
       </Flex>
     </main>

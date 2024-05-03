@@ -65,7 +65,7 @@ const Home = () => {
         alignItems="center"
         justifyContent={{ base: "center", md: "space-around" }}
         flexWrap="wrap-reverse"
-        mt={20}
+        mt={{ base: "6dvh", md: "" }}
       >
         <Box
           px="10px"

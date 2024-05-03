@@ -30,6 +30,7 @@
   margin: 0;
   background-color: var(--body_bg);
   color: var(--body_color);
+  overflow: hidden;
 }
 
 main {

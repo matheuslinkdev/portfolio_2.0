@@ -13,7 +13,7 @@
     "modalContent": "I am 19 years old, majoring in Computer Science, and have been studying programming since 2023, when I started learning logic and algorithms using VisualG. I've always been into the world of technology but never knew where to go until a cousin already established in the field recommended programming to me, and since then, I've been striving every day to become a Developer and above all, a successful person! Currently, I am part of HX Solucoes, a team of Freelancer friends, which I am sure is helping me to evolve more and more. 🚀",
     "modalClose": "Close"
   },
-  "Skills": "Here you can see the technologies that I feel comfortable using in my daily routine currently.",
+  "Skills": "Here you can see the technologies I'm comfortable using in my daily routine. I'm constantly striving to evolve and broaden my skill set, always eager to learn new technologies.",
   "Projects": {
     "ProjectsLabel": "Here you can see some projects that i've built during this journey.",
     "CryptoLine": "Cryptocurrency quote app, built with React Js, Vite, Chakra UI, and CoinGeckoApi. Users can consult updated information about cryptocurrencies.",

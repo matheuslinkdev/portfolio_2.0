@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
 import DarkMode from "../../Theme/DarkMode";
 import {
   Box,
   Button,
   ButtonGroup,
-  Flex,
   Center,
   Spacer,
   List,
@@ -53,7 +51,7 @@ const Header = () => {
   ];
 
   return (
-    <Flex
+    <Center
       padding="5px 10px"
       className="header"
       w="100%"
@@ -157,24 +155,34 @@ const Header = () => {
           onClick={() => handleChangeLanguage("pt")}
           className="lang-btn"
           variant="ghost"
-          size="lg"
-          aria-label="Portugues"
-        >
-          <ReactCountryFlag countryCode="BR" svg alt="Bandeira do Brasil" />
-        </Button>
+          bgImage="url(br.svg)"
+          h="30px"
+          w="auto"
+          bgRepeat="no-repeat"
+          bgSize="cover"
+          bgPosition="center"
+          _hover={{bgColor: "initial", boxShadow: "0 2px 6px var(--chakra-colors-blue-400)", transform: "scale(1.02)"}}
+          aria-label="Brazilian Flag"
+        />
+         
         <Button
           onClick={() => handleChangeLanguage("en")}
           className="lang-btn"
           variant="ghost"
-          size="lg"
-          aria-label="English"
-        >
-          <ReactCountryFlag countryCode="GB" svg alt="Great Britain Flag" />
-        </Button>
+          bgImage="url(gb.svg)"
+          h="30px"
+          w="auto"
+          bgRepeat="no-repeat"
+          bgSize="cover"
+          bgPosition="center"
+          _hover={{bgColor: "initial", boxShadow: "0 2px 6px var(--chakra-colors-blue-400)", transform: "scale(1.02)"}}
+          aria-label="Great Britain Flag"
+        />
+
         <Spacer />
         <DarkMode />
       </ButtonGroup>
-    </Flex>
+    </Center>
   );
 };
 
