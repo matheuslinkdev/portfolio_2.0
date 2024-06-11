@@ -54,11 +54,11 @@ const Header = () => {
     <Center
       padding="5px 10px"
       className="header"
-      w="100%"
+      w="100dvw"
       position="fixed"
       zIndex="30"
-      bg={headerScrollY > 80 ? "blue.transparent.200" : "transparent"} // Change background color based on scroll position
-      backdropFilter={headerScrollY > 80 ? "blur(5px)" : "none"} // Apply backdrop filter based on scroll position
+      bg={headerScrollY > 80 ? "blue.transparent.200" : "transparent"}
+      backdropFilter={headerScrollY > 80 ? "blur(5px)" : "none"}
     >
       {/* Hamburger menu for small screens */}
       <Box display={{ base: "block", md: "none" }}>
@@ -93,7 +93,7 @@ const Header = () => {
       {/* Overlay and navigation links for small screens when menu is open */}
       <Center
         style={{
-          display: menuOpen ? "flex" : "none",
+          visibility: menuOpen ? "visible" : "hidden",
           position: "fixed",
           top: 0,
           left: 0,
@@ -162,10 +162,14 @@ const Header = () => {
           bgRepeat="no-repeat"
           bgSize="cover"
           bgPosition="center"
-          _hover={{bgColor: "initial", boxShadow: "0 2px 6px var(--chakra-colors-blue-400)", transform: "scale(1.02)"}}
+          _hover={{
+            bgColor: "initial",
+            boxShadow: "0 2px 6px var(--chakra-colors-blue-400)",
+            transform: "scale(1.02)",
+          }}
           aria-label="Brazilian Flag"
         />
-         
+
         <Button
           onClick={() => handleChangeLanguage("en")}
           className="lang-btn"
@@ -176,7 +180,11 @@ const Header = () => {
           bgRepeat="no-repeat"
           bgSize="cover"
           bgPosition="center"
-          _hover={{bgColor: "initial", boxShadow: "0 2px 6px var(--chakra-colors-blue-400)", transform: "scale(1.02)"}}
+          _hover={{
+            bgColor: "initial",
+            boxShadow: "0 2px 6px var(--chakra-colors-blue-400)",
+            transform: "scale(1.02)",
+          }}
           aria-label="Great Britain Flag"
         />
 

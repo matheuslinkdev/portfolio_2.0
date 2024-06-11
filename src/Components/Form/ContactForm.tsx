@@ -6,6 +6,7 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
+  Text,
   Textarea,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -118,8 +119,9 @@ return (
         {emptyField && (
           <FormErrorMessage>{t("Form.errorMsg")}</FormErrorMessage>
         )}
-        <Button type="submit" mt={5} w={150} bgColor="blue.200" _hover={{bgColor: "blue.100"}}>
+        <Button type="submit" mt={5} w={170} color="blue.900" bgColor="blue.300" _hover={{bgColor: "blue.200"}}>
           {t("Form.buttonLabel")}
+          <Text></Text>
         </Button>
       </FormControl>
     </form>

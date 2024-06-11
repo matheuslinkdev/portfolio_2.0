@@ -5,53 +5,51 @@ const Projects = () => {
 
   const projectList = [
     {
-      title: "CryptoLine",
-      screenshotUrl: "https://i.ibb.co/7RpDh0x/cryptoline.png",
-      description: t("Projects.CryptoLine"),
-      GitHubLink: "https://github.com/matheuslinkdev/crypto_line",
-      deployLink: "https://crypto-line.vercel.app/",
-      isFinished: false,
+      title: "F1Roster",
+      screenshotUrl: "/projects/f1roster.webp",
+      description: t("Projects.F1Roster"),
+      GitHubLink: "https://github.com/matheuslinkdev/f1_roster",
+      deployLink: "https://f1-roster.vercel.app",
+      isFinished: true,
+      isMobile: false
     },
     {
       title: "Polyngo",
-      screenshotUrl: "https://i.ibb.co/sHC0fQ6/polyngo.png",
+      screenshotUrl: "/projects/polyngo.webp",
       description: t("Projects.Polyngo"),
       GitHubLink: "https://github.com/matheuslinkdev/Polyngo",
-      deployLink: "",
-      isFinished: false,
-    },
-    {
-      title: "F1Roster",
-      screenshotUrl: "https://i.ibb.co/Mh76d1q/f1roster.png",
-      description: t("Projects.F1Roster"),
-      GitHubLink: "https://github.com/matheuslinkdev/f1_roster",
-      deployLink: "https://matheuslinkdev.github.io/f1_roster/",
+      deployLink: "https://polyngo-xi.vercel.app/",
       isFinished: true,
+      isMobile: false
     },
+
     {
       title: "EcoMatters",
-      screenshotUrl: "https://i.ibb.co/52fXbH7/ecomatters.png",
+      screenshotUrl: "/projects/ecomatters.webp",
       description: t("Projects.EcoMatters"),
       GitHubLink: "https://github.com/matheuslinkdev/ecomatters-react",
       deployLink: "https://matheuslinkdev.github.io/ecomatters-react/loja",
       isFinished: true,
+      isMobile: false
+    },
+
+    {
+      title: "ChatBase",
+      screenshotUrl: "/projects/chatbase.webp",
+      description: t("Projects.ChatBase"),
+      GitHubLink: "https://github.com/matheuslinkdev/chatbase",
+      deployLink: "https://chatbase-six.vercel.app/",
+      isFinished: true,
+      isMobile: false
     },
     {
-      title: "CadFunc",
-      screenshotUrl: "https://i.ibb.co/RY8vfBf/cadfunc.png",
-      description: t("Projects.CadFunc"),
-      GitHubLink: "https://github.com/matheuslinkdev/gerenciador-funcionarios",
-      deployLink: "",
+      title: "MovieVerse",
+      screenshotUrl: "/projects/movieverse.webp",
+      description: t("Projects.MovieVerse"),
+      GitHubLink: "https://github.com/matheuslinkdev/movie-verse",
+      deployLink: "https://movieverse-tawny.vercel.app/",
       isFinished: true,
-    },
-    {
-      title: "ByteBank",
-      screenshotUrl: "https://i.ibb.co/Lk07mf5/bytebank.png",
-      description: t("Projects.ByteBank"),
-      GitHubLink: "https://github.com/matheuslinkdev/bytebank-alura",
-      deployLink:
-        "https://bytebank-tests-nu6x0fhot-matheus-links-projects.vercel.app/",
-      isFinished: true,
+      isMobile: false
     },
   ];
 

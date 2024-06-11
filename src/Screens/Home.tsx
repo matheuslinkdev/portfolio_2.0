@@ -65,7 +65,8 @@ const Home = () => {
         alignItems="center"
         justifyContent={{ base: "center", md: "space-around" }}
         flexWrap="wrap-reverse"
-        mt={{ base: "7dvh", md: "0" }}
+        mt={{ base: "7dvh", md: "5dvh" }}
+        mb={0}
       >
         <Box
           px="10px"
@@ -129,6 +130,8 @@ const Home = () => {
                 borderRadius="full"
                 width="200px"
                 height="200px"
+                maxW="65dvw"
+                maxH="auto"
                 bgGradient="linear(to-r, blue.200, blue.800)"
                 src="https://avatars.githubusercontent.com/u/122500941?s=400&u=1616f74cd49d584d299ac2595cc841f1849a03f0&v=4"
                 alt="Matheus Link"
