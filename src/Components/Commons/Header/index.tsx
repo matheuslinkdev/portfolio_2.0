@@ -55,9 +55,10 @@ const Header = () => {
       padding="5px 10px"
       className="header"
       w="100dvw"
+      h="8dvh"
       position="fixed"
       zIndex="30"
-      bg={headerScrollY > 80 ? "blue.transparent.200" : "transparent"}
+      bg={headerScrollY > 80 ? "blue.transparent.300" : "transparent"}
       backdropFilter={headerScrollY > 80 ? "blur(5px)" : "none"}
     >
       {/* Hamburger menu for small screens */}
@@ -100,10 +101,10 @@ const Header = () => {
           width: "100%",
           height: "100vh",
           zIndex: "25",
-          backgroundColor: "rgba(0, 0, 0, 0.9)",
           flexDirection: "column",
           justifyContent: "center",
         }}
+        className="menu-overlay"
         onClick={() => setMenuOpen(false)}
       >
         <List alignItems="center" textAlign="center">
@@ -111,9 +112,10 @@ const Header = () => {
             <ListItem
               key={link.id}
               m="25px 0"
-              color="white.200"
               onClick={() => scrollIntoView(link.id)}
               style={{ cursor: "pointer", fontWeight: 600, fontSize: "1.2rem" }}
+             color="#fff"
+             className="header-link"
             >
               {link.label}
             </ListItem>
@@ -142,6 +144,7 @@ const Header = () => {
               _hover={{ cursor: "pointer" }}
               fontWeight={600}
               onClick={() => scrollIntoView(link.id)}
+              className="header-link"
             >
               {link.label}
             </ListItem>

@@ -7,14 +7,13 @@ const Skills = () => {
   return (
     <main>
       <Flex
-        className="flex-container"
+        className="flex-container-skills"
         borderRadius="none"
-        bgColor="blue.800"
         w="100%"
         justifyContent="space-evenly"
         flexWrap="wrap"
         >
-        <Text textAlign={{base: "center", md: "start"}} w="500px" maxW="95dvw" color="white.200">
+        <Text textAlign={{base: "center", md: "start"}} w="500px" maxW="95dvw" color="white.200" fontSize={18} fontWeight={500}>
             {t("Skills")}
         </Text>
         <SkillCard />

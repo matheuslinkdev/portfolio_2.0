@@ -16,15 +16,15 @@
   "Skills": "Aqui você pode ver as tecnologias com as quais me sinto confortável utilizando no meu dia a dia. Estou sempre buscando evoluir e ampliar meu conjunto de habilidades, além de estar 100% disposto a aprender novas tecnologias.",
   "Projects": {
     "ProjectsLabel": "Aqui você pode ver alguns de meus projetos desenvolvidos durante essa jornada.",
-    "CryptoLine": "App de cotação de criptomoedas, feito com React Js, Vite, Chakra UI e CoinGeckoApi, nele o usuário pode consultar informações atualizadas sobre criptomoedas.",
-    "F1Roster": "App onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1. Feito originalmente em React + Vite, estou migrando ele para Next JS.",
-    "InovaTech": "Site institucional fictício, feito com React e Vite, nele o usuário pode fazer uma navegação simples, onde o conteúdo é alterado conforme o usuário avança.",
-    "Polyngo": "Site fictício de uma instituição de ensino. Feito com React, Node e Express. Nele o usuário pode consultar idiomas ensinados, formações, além de operações de cadastro e login.",
-    "EcoMatters": "Site fictício de uma organização ambiental, feito em React, Vite e utilizando ContextApi. Nele o usuário pode adicionar produtos da loja ao carrinho que possui a soma do valor total.",
-    "MovieVerse": "Site de filmes desenvolvido com React JS, com funcionalidades básicas como pesquisa e adição e remoção de filmes à lista de favoritos.",
-    "ChatBase": "Projeto de Chat, desenvolvido com React JS, Firebase e Zustand. Nele os usuários podem usufruir das funcionalidads básicas de uma aplicação de Chat, como: Enviar mensagens, enviar imagens, adicionar conversas e bloquear usuários."
+    "F1Roster": "Site onde o usuário pode consultar informações sobre a atual temporada da Fórmula 1, como: Calendário, classificação do campeonato de pilotos, resultados e os pilotos da temporada. Nesse projeto foi desafiador converter os dados XML que retornavam de uma API para JSON, e também foi desafiador lidar com vários tipos de dados, formatar horários com base no local do dispositivo e deixar a página responsiva e acessível.",
+    "Polyngo": "Site fictício de uma instituição de ensino. Feito com React, Node e Express. Nele o usuário pode consultar idiomas ensinados, formações, além de operações de cadastro e login. Foi desafiador lidar com as operações necessárias, com a consulta de dados, validação de dados de cadastro e login, estou enfrentando problemas com as políticas do CORS nessa aplicação, então você pode enfrentar problemas.",
+    "EcoMatters": "Site fictício de uma organização ambiental, feito em React, Vite e utilizando ContextApi. Nele o usuário pode adicionar produtos da loja ao carrinho, também é feita a soma de todos os produtos adicionados e o valor total é exibido e alterado conforme o que o usuário adiciona ao carrinho. Foi um dos meus primeiros projetos utilizando React JS, abordando tópicos que até então eu nunca tinha utilizado de forma prática e sem a ajuda de um tutorial. Certamente foi um projeto que me ajudou à compreender aluns tópicos fundamentais do React JS.",
+    "MovieVerse": "Site de filmes desenvolvido com React JS, com funcionalidades básicas como pesquisa e adição e remoção de filmes à lista de favoritos. Desenvolvi esse projeto para praticar conceitos básicos do React JS, como o consumo de APIs, uso da Context API e de navegação utilizando a biblioteca react-router-dom. Existem algumas funcionalidades que posso implementar em breve, mas por enquanto é só isso.",
+    "ChatBase": "Projeto de Chat, desenvolvido com React JS, Firebase e Zustand. Nele os usuários podem usufruir das funcionalidads básicas de uma aplicação de Chat, como: Enviar mensagens, enviar imagens, adicionar conversas e bloquear usuários. Esse projeto foi feito a partir de um tutorial, foi desafiador compreender todas as funcionalidades do firebase necessárias para esse projeto, como autenticação, criação de chats e envio de mensagens e imagens. Certamente esse projeto me ajudou a compreender uma tecnologia que busco me aprofundar.",
+    "CuriCoffee": "Aplicativo de cafeterias de Curitiba, sendo desenvolvido em React Native, Expo e mapbox. Nesssa aplicação o usuário poderá encontrar cafeterias, ver detalhes e traçar rotas. É meu primeiro projeto com React Native, eu tinha começado um projeto parecido utilizando React JS, porém não avancei, a idéia desse projeto veio em meio à minha vontade de aprender sobre Desenvolvimento Mobile e a necessidade para trabalhar em um aplicativo.",
+    "ModalBtn": "Detalhes"
   },
-  "Form":{
+  "Form": {
     "nameLabel": "Seu Nome:",
     "msgLabel": "Sua Mensagem:",
     "errorMsg": "Preencha esse campo !",

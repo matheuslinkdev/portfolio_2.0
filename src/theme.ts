@@ -11,6 +11,7 @@ const theme = extendTheme({
       transparent: {
         "50": "#ffffff33",
         "100": "#f3f3f333",
+        "200": "#f3f3f3aa",
       },
     },
     black: {
@@ -24,6 +25,7 @@ const theme = extendTheme({
         "50": "#25252533",
         "100": "#15151533",
         "200": "#15151565",
+        "300": "#151515dd",
       },
     },
     gray: {
@@ -56,6 +58,7 @@ const theme = extendTheme({
         "50": "#2da4ff33",
         "100": "#073c7333",
         "200": "#04264d33",
+        "300": "#2da4ff55",
       },
     },
     orange: {

@@ -47,23 +47,22 @@ const Home = () => {
 
   const props = useSpring({
     from: { transform: "translateY(-10px)" },
-    to: { transform: "translateY(10px)"},
+    to: { transform: "translateY(10px)" },
     config: { duration: 3000 },
     loop: { reverse: true },
   });
 
-    const btnProps = useSpring({
-      from: { transform: "translateX(10px)" },
-      to: { transform: "translateY(0px)" },
-    });
-
+  const btnProps = useSpring({
+    from: { transform: "translateX(10px)" },
+    to: { transform: "translateY(0px)" },
+  });
 
   return (
     <main>
       <Flex
         className="flex-container home"
         alignItems="center"
-        justifyContent={{ base: "center", md: "space-around" }}
+        justifyContent={{ base: "center", md: "space-evenly" }}
         flexWrap="wrap-reverse"
         mt={{ base: "7dvh", md: "5dvh" }}
         mb={0}
@@ -74,44 +73,54 @@ const Home = () => {
           maxWidth="100%"
           display="flex"
           flexWrap="wrap"
-          justifyContent="center"
+          justifyContent="start"
           alignItems="center"
           className="content-box-home"
         >
           <Text fontSize="3xl" fontWeight={600}>
             {t("HomePage.introduction")}
           </Text>
-          <Text fontSize="2xl" color="blue.300" mt={2}>
+          <Text fontSize="2xl" fontWeight={500} color="blue.300" mt={2}>
             {t("HomePage.stack")}
           </Text>
           <Flex
             width="100%"
             display="flex"
-            justifyContent="center"
+            justifyContent={{ base: "center", md: "flex-start" }}
             alignItems="center"
             m="15px auto"
           >
-            {buttonLinks.map((target, index) => {
-              return (
-                <AnimatedComponent key={index}>
-                  <animated.div style={btnProps}>
-                    <Button
-                      key={index}
-                      w="140px"
-                      mt={2}
-                      mx={2}
-                      bgColor={target.backgroundColor}
-                      color="white.100"
-                      _hover={{ bg: target.hoverBgColor }}
-                      onClick={() => redirectToUrl(target.href)}
-                      aria-label={`${target.title} button`}
-                    >
-                      <Icon as={target.icon} mr={2} /> {target.title}
-                    </Button>
-                  </animated.div>
-                </AnimatedComponent>
-              );
-            })}
+            <AnimatedComponent>
+              <animated.div style={btnProps}>
+                <Flex alignItems="start" justifyContent="start">
+                  <Button
+                    w="140px"
+                    mt={2}
+                    bgColor={buttonLinks[0].backgroundColor}
+                    color="white.100"
+                    _hover={{ bg: buttonLinks[0].hoverBgColor }}
+                    onClick={() => redirectToUrl(buttonLinks[0].href)}
+                    aria-label={`${buttonLinks[0].title} button`}
+                  >
+                    <Icon as={buttonLinks[0].icon} mr={2} fontSize={22} />{" "}
+                    {buttonLinks[0].title}
+                  </Button>
+                  <Button
+                    w="140px"
+                    mt={2}
+                    bgColor={buttonLinks[1].backgroundColor}
+                    color="white.100"
+                    _hover={{ bg: buttonLinks[1].hoverBgColor }}
+                    onClick={() => redirectToUrl(buttonLinks[1].href)}
+                    aria-label={`${buttonLinks[1].title} button`}
+                    ml={2}
+                  >
+                    <Icon as={buttonLinks[1].icon} mr={2} fontSize={22} />{" "}
+                    {buttonLinks[1].title}
+                  </Button>
+                </Flex>
+              </animated.div>
+            </AnimatedComponent>
           </Flex>
         </Box>
 

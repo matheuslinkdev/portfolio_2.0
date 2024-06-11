@@ -11,7 +11,7 @@ const Projects = () => {
       GitHubLink: "https://github.com/matheuslinkdev/f1_roster",
       deployLink: "https://f1-roster.vercel.app",
       isFinished: true,
-      isMobile: false
+      isMobile: false,
     },
     {
       title: "Polyngo",
@@ -20,7 +20,16 @@ const Projects = () => {
       GitHubLink: "https://github.com/matheuslinkdev/Polyngo",
       deployLink: "https://polyngo-xi.vercel.app/",
       isFinished: true,
-      isMobile: false
+      isMobile: false,
+    },
+    {
+      title: "ChatBase",
+      screenshotUrl: "/projects/chatbase.webp",
+      description: t("Projects.ChatBase"),
+      GitHubLink: "https://github.com/matheuslinkdev/chatbase",
+      deployLink: "https://chatbase-six.vercel.app/",
+      isFinished: true,
+      isMobile: false,
     },
 
     {
@@ -30,18 +39,9 @@ const Projects = () => {
       GitHubLink: "https://github.com/matheuslinkdev/ecomatters-react",
       deployLink: "https://matheuslinkdev.github.io/ecomatters-react/loja",
       isFinished: true,
-      isMobile: false
+      isMobile: false,
     },
 
-    {
-      title: "ChatBase",
-      screenshotUrl: "/projects/chatbase.webp",
-      description: t("Projects.ChatBase"),
-      GitHubLink: "https://github.com/matheuslinkdev/chatbase",
-      deployLink: "https://chatbase-six.vercel.app/",
-      isFinished: true,
-      isMobile: false
-    },
     {
       title: "MovieVerse",
       screenshotUrl: "/projects/movieverse.webp",
@@ -49,7 +49,16 @@ const Projects = () => {
       GitHubLink: "https://github.com/matheuslinkdev/movie-verse",
       deployLink: "https://movieverse-tawny.vercel.app/",
       isFinished: true,
-      isMobile: false
+      isMobile: false,
+    },
+    {
+      title: "curicoffee",
+      screenshotUrl: "/projects/curicoffee.webp",
+      description: t("Projects.CuriCoffee"),
+      GitHubLink: "https://github.com/matheuslinkdev/curicoffee",
+      deployLink: "",
+      isFinished: false,
+      isMobile: true,
     },
   ];
 

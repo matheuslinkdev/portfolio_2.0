@@ -12,7 +12,7 @@ import {
   BiLogoFigma,
   BiLogoJavascript,
 } from "react-icons/bi";
-import { SiNextdotjs } from "react-icons/si";
+import { SiFirebase, SiNextdotjs } from "react-icons/si";
 
 const skillsArray = [
   {
@@ -40,16 +40,20 @@ const skillsArray = [
     title: "React",
   },
   {
-    icon: DiReact,
-    title: "React Native",
-  },
-  {
     icon: SiNextdotjs,
     title: "Next.js",
   },
   {
+    icon: DiReact,
+    title: "React Native",
+  },
+  {
     icon: DiNodejsSmall,
     title: "Node.js",
+  },
+  {
+    icon: SiFirebase,
+    title: "Firebase",
   },
   {
     icon: DiGithubBadge,

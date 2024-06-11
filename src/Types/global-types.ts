@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface TooltipProps {
   children: React.ReactNode;
   title: string;
@@ -13,4 +15,13 @@ export interface RedirectBtnProps {
   textColor: string;
   bgColor: string;
   btnFunction: () => void;
+}
+
+export interface ProjectProps {
+  project: {
+    title: string;
+    description: string;
+    GitHubLink: string;
+    deployLink: string;
+  };
 }

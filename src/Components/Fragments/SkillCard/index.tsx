@@ -30,28 +30,27 @@ const SkillCard = () => {
             position: "relative",
           }}
         >
-          <Center title={skillsArray[index].title} backgroundColor="var(--chakra-colors-black-800)"
-                width="10rem"
-                height="3.5rem"
-                padding="7px"
-                borderRadius="2px"
-                justifyContent="space-evenly">
+          <Center
+            title={skillsArray[index].title}
+            backgroundColor="blue.900"
+            width="10rem"
+            height="3.5rem"
+            px={2}
+            borderRadius="2px"
+            justifyContent="space-between"
+          >
             <Icon
               as={skillsArray[index].icon}
               style={{
                 fontSize: "40px",
                 color: "var(--chakra-colors-blue-300)",
               }}
-              
               _hover={{
                 transform: "scale(1.05)",
                 filter: "drop-shadow(0 0 5px var(--chakra-colors-blue-700))",
               }}
             />
-            <Text
-              fontWeight={500}
-              color="white.200"
-            >
+            <Text fontWeight={500} color="white.200">
               {skillsArray[index].title}
             </Text>
           </Center>

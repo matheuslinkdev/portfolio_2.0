@@ -16,20 +16,20 @@
   "Skills": "Here you can see the technologies I'm comfortable using in my daily routine. I'm constantly striving to evolve and broaden my skill set, always eager to learn new technologies.",
   "Projects": {
     "ProjectsLabel": "Here you can see some projects that i've built during this journey.",
-    "CryptoLine": "Cryptocurrency quote app, built with React Js, Vite, Chakra UI, and CoinGeckoApi. Users can consult updated information about cryptocurrencies.",
-    "F1Roster": "App where users can access information about the current Formula 1 season. Originally built with React + Vite, I'm migrating it to Next JS.",
-    "InovaTech": "Fictitious institutional website, built with React and Vite. Users can navigate through simple navigation, where the content changes as they progress.",
-    "Polyngo": "Fictitious educational institution website. Built with React, Vite, Node, Express, and Chakra UI. Users can consult languages taught, formations, and also login and signup.",
-    "EcoMatters": "Fictitious environmental organization website, built with React, Vite, and utilizing ContextApi. Users can add products from the store to the cart, which has the total value sum.",
-    "MovieVerse": "A movie website developed with React JS, featuring basic functionalities such as search and adding/removing movies to/from the favorites list.",
-    "ChatBase": "Chat project developed with React JS, Firebase, and Zustand. In it, users can enjoy the basic functionalities of a chat application, such as: sending messages, sending images, adding conversations, and blocking users."
+    "F1Roster": "A site where users can consult information about the current Formula 1 season, such as the schedule, driver standings, race results, and the drivers of the season. In this project, it was challenging to convert the XML data returned from an API to JSON, and it was also challenging to handle various types of data, format times based on the device's location, and make the page responsive and accessible.",
+    "Polyngo": "A fictional educational institution website built with React, Node, and Express. Users can consult taught languages, courses, and perform registration and login operations. It was challenging to handle the necessary operations, data retrieval, and validation for registration and login. I am currently facing issues with CORS policies in this application, so you might encounter some problems.",
+    "EcoMatters": "A fictional environmental organization website built with React, Vite, and using ContextAPI. Users can add products from the store to their cart, with the total sum of all added products being displayed and updated as the user adds items to the cart. This was one of my first projects using React JS, covering topics I had never used practically before and without the help of a tutorial. Certainly, this project helped me understand some fundamental topics of React JS.",
+    "MovieVerse": "A movie website developed with React JS, featuring basic functionalities such as searching and adding or removing movies from the favorites list. I developed this project to practice basic React JS concepts, such as API consumption, using Context API, and navigation using the react-router-dom library. There are some functionalities I might implement soon, but for now, that's all it has.",
+    "ChatBase": "A Chat project developed with React JS, Firebase, and Zustand. In it, users can enjoy the basic functionalities of a Chat application, such as sending messages, sending images, adding conversations, and blocking users. This project was built following a tutorial, and it was challenging to understand all the necessary Firebase functionalities for this project, such as authentication, chat creation, and sending messages and images. Certainly, this project helped me understand a technology that I aim to delve deeper into.",
+    "CuriCoffee": "A coffee shop app for Curitiba, developed with React Native, Expo, and Mapbox. In this application, users can find coffee shops, view details, and map routes. This is my first project with React Native. I had started a similar project using React JS, but I didn't progress with it. The idea for this project came from my desire to learn about Mobile Development and the need to work on an application.",
+    "ModalBtn": "Details"
   },
-  "Form":{
+  "Form": {
     "nameLabel": "Your Name:",
     "msgLabel": "Your Message:",
     "errorMsg": "Fill this field!",
     "textAreaPlaceholder": "I saw you portfolio and would like to give you a feedback...",
     "buttonLabel": "Send Message"
-  }, 
+  },
   "Contact": "Contact me through one of the means listed below or quickly send me an email using the form! Your message will be very important to me."
 }
