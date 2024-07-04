@@ -7,23 +7,27 @@
   --header_link: var(--chakra-colors-black-900);
   --menu-overlay: var(--chakra-colors-white-transparent-200);
   --skills-container: var(--chakra-colors-blue-700);
-  }
-  
-  [data-theme="dark"] {
-    --body_bg: var(--chakra-colors-blue-990);
-    --body_color: var(--chakra-colors-white-200);
-    --link_color: var(--chakra-colors-white-100);
-    --lang-btn-bg: var(--chakra-colors-black-transparent-200);
-    --list-hover: var(--chakra-colors-blue-800);
-    --header_link: var(--chakra-colors-white-200);
-    --menu-overlay: var(--chakra-colors-black-transparent-300);
-    --skills-container: var(--chakra-colors-black-800);
+}
+
+[data-theme="dark"] {
+  --body_bg: var(--chakra-colors-blue-990);
+  --body_color: var(--chakra-colors-white-200);
+  --link_color: var(--chakra-colors-white-100);
+  --lang-btn-bg: var(--chakra-colors-black-transparent-200);
+  --list-hover: var(--chakra-colors-blue-800);
+  --header_link: var(--chakra-colors-white-200);
+  --menu-overlay: var(--chakra-colors-black-transparent-300);
+  --skills-container: var(--chakra-colors-black-800);
 }
 
 * {
   transition: all 0.3s linear;
   font-family: "Poppins", sans-serif;
   max-width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .App {
@@ -41,7 +45,6 @@
 main {
   min-height: 90dvh;
   width: 100dvw;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +60,7 @@ li {
 
 .flex-container {
   background-color: tomato;
-  border-radius: 20px;
+  border-radius: 10px;
   min-height: 90dvh;
   margin: 5dvh auto;
   width: 95%;
@@ -86,7 +89,7 @@ p {
   background-color: var(--menu-overlay);
 }
 
-.flex-container-skills{
+.flex-container-skills {
   background-color: var(--skills-container);
   border-radius: 20px;
   min-height: 90dvh;

@@ -9,10 +9,10 @@ const Contact = () => {
 
   return (
     <main>
-      <Text w="600px" maxW="95dvw" m="auto" mt={10} fontSize="1.1rem">{t("Contact")}</Text>
+      <Text w="620px" maxW="95dvw" m="auto" mt={10} fontSize="1.1rem">{t("Contact")}</Text>
       <Flex
         className="flex-container"
-        borderRadius="20px"
+        borderRadius="5px"
         bgColor="blue.800"
         flexDir={{ base: "column", md: "row" }}
         justifyContent={{ base: "center", md: "space-evenly" }}

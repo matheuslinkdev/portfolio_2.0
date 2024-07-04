@@ -30,14 +30,20 @@ const AboutMeModal = () => {
         color="white.300"
         fontWeight={500}
         fontSize="lg"
-        _hover={{ bg: "blue.900", transform: "scale(1.03)"}}
+        transition=".3s ease"
+        _hover={{
+          bg: "blue.900",
+          transform: "scale(1.01)",
+          borderRadius: "5px",
+        }}
+        borderRadius="2px"
       >
-        {t("HomePage.modalBtn")} <Icon as={MdEmojiPeople} fontSize={20}/>
+        {t("HomePage.modalBtn")} <Icon as={MdEmojiPeople} fontSize={20} />
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent w={430} maxW="95dvw" mt="10dvh" bgColor="black.600">
+        <ModalContent w={430} maxW="95dvw" mt="10dvh" bgColor="#401905">
           <ModalCloseButton />
           <ModalBody>
             <Text mt={10} color="white.300">
@@ -46,7 +52,13 @@ const AboutMeModal = () => {
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose} bg="red.800" _hover={{bg: "red.700"}}>
+            <Button
+              colorScheme="blue"
+              mr={3}
+              onClick={onClose}
+              bg="red.800"
+              _hover={{ bg: "red.700" }}
+            >
               {t("HomePage.modalClose")}
             </Button>
             <Button

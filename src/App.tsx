@@ -42,7 +42,7 @@ function App() {
           </AnimatedComponent>
         </div>
         <div id="projectsPage">
-            <Projects />
+          <Projects />
         </div>
         <div id="contactPage">
           <AnimatedComponent>

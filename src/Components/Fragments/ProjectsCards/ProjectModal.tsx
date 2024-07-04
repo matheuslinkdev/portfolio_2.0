@@ -9,6 +9,9 @@ import {
   Text,
   Button,
   useDisclosure,
+  Heading,
+  Flex,
+  Image,
 } from "@chakra-ui/react";
 import { redirectToUrl } from "../../../Utils/redirectUrl";
 import { useTranslation } from "react-i18next";
@@ -21,10 +24,13 @@ const ProjectModal = ({ project }: ProjectProps) => {
     <>
       <Button
         onClick={onOpen}
-        bgColor="blue.600"
-        _hover={{ bg: "blue.700" }}
+        bgColor="blue.500"
+        _hover={{ bg: "blue.700", borderRadius: "5px" }}
         color="white.200"
-        fontWeight={400}
+        transition=".2s ease"
+        borderRadius="2px"
+        p={4}
+        fontWeight={500}
       >
         {t("Projects.ModalBtn")}
       </Button>
@@ -35,6 +41,16 @@ const ProjectModal = ({ project }: ProjectProps) => {
           <ModalHeader>{project.title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <Flex alignItems="center" mb={2}>
+              <Heading size="md" fontWeight={500}>
+                {t("Projects.projectLanguage")}
+              </Heading>
+              <Image
+                src={project.isInEnglish ? "/gb.svg" : "/br.svg"}
+                height={8}
+                ml={2}
+              />
+            </Flex>
             <Text>{project.description}</Text>
           </ModalBody>
 

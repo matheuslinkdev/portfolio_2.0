@@ -41,7 +41,7 @@ const WebProjects = () => {
               width="100%"
               position="relative"
               overflow="hidden"
-              borderRadius="15px"
+              borderRadius="5px"
             >
               <Box
                 as="img"
@@ -65,8 +65,10 @@ const WebProjects = () => {
                 _hover={{ bg: "black.transparent.300" }}
               >
                 {!project.isFinished && (
-                  <Center position="absolute" top={2} w="100%">
-                    <Text>Work in progress</Text>
+                  <Center position="absolute" top={6} w="100%" bg="red.900">
+                    <Text color="white.100" fontWeight={500} fontSize={18}>
+                      Work in progress
+                    </Text>
                   </Center>
                 )}
                 <Stack textAlign="center" w="100%" alignItems="center">

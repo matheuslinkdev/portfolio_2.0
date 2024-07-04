@@ -23,5 +23,6 @@ export interface ProjectProps {
     description: string;
     GitHubLink: string;
     deployLink: string;
+    isInEnglish: boolean;
   };
 }

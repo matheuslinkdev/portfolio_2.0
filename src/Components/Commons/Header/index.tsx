@@ -114,8 +114,8 @@ const Header = () => {
               m="25px 0"
               onClick={() => scrollIntoView(link.id)}
               style={{ cursor: "pointer", fontWeight: 600, fontSize: "1.2rem" }}
-             color="#fff"
-             className="header-link"
+              color="#fff"
+              className="header-link"
             >
               {link.label}
             </ListItem>

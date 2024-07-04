@@ -12,6 +12,7 @@ const Projects = () => {
       deployLink: "https://f1-roster.vercel.app",
       isFinished: true,
       isMobile: false,
+      isInEnglish: true,
     },
     {
       title: "Polyngo",
@@ -21,6 +22,7 @@ const Projects = () => {
       deployLink: "https://polyngo-xi.vercel.app/",
       isFinished: true,
       isMobile: false,
+      isInEnglish: false,
     },
     {
       title: "ChatBase",
@@ -30,6 +32,7 @@ const Projects = () => {
       deployLink: "https://chatbase-six.vercel.app/",
       isFinished: true,
       isMobile: false,
+      isInEnglish: true,
     },
 
     {
@@ -40,6 +43,7 @@ const Projects = () => {
       deployLink: "https://matheuslinkdev.github.io/ecomatters-react/loja",
       isFinished: true,
       isMobile: false,
+      isInEnglish: false,
     },
 
     {
@@ -50,6 +54,7 @@ const Projects = () => {
       deployLink: "https://movieverse-tawny.vercel.app/",
       isFinished: true,
       isMobile: false,
+      isInEnglish: true,
     },
     {
       title: "curicoffee",
@@ -59,6 +64,17 @@ const Projects = () => {
       deployLink: "",
       isFinished: false,
       isMobile: true,
+      isInEnglish: false,
+    },
+    {
+      title: "GameLinker",
+      screenshotUrl: "/projects/game-linker.webp",
+      description: t("Projects.GameLinker"),
+      GitHubLink: "https://github.com/matheuslinkdev/game_linker",
+      deployLink: "https://game-linker.vercel.app/",
+      isFinished: true,
+      isMobile: false,
+      isInEnglish: true,
     },
   ];
 

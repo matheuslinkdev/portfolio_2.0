@@ -38,6 +38,7 @@ const SkillCard = () => {
             px={2}
             borderRadius="2px"
             justifyContent="space-between"
+            _hover={{bgColor: "blue.950"}}
           >
             <Icon
               as={skillsArray[index].icon}

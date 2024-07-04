@@ -58,8 +58,8 @@ const MobileProjects = () => {
                   _hover={{ bg: "black.transparent.300" }}
                 >
                   {!pjt.isFinished && (
-                    <Center position="absolute" top={2} w="100%">
-                      <Text color="white.100">Work in progress</Text>
+                    <Center position="absolute" top={6} w="100%" bg="red.900">
+                      <Text color="white.100" fontWeight={500} fontSize={18}>Work in progress</Text>
                     </Center>
                   )}
                   <Stack textAlign="center" w="100%" alignItems="center" mb={6}>

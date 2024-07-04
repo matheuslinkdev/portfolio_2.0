@@ -98,7 +98,9 @@ const Home = () => {
                     mt={2}
                     bgColor={buttonLinks[0].backgroundColor}
                     color="white.100"
-                    _hover={{ bg: buttonLinks[0].hoverBgColor }}
+                    borderRadius="2px"
+                    _hover={{ bg: buttonLinks[0].hoverBgColor, borderRadius: "5px" }}
+                    transition=".3s ease"
                     onClick={() => redirectToUrl(buttonLinks[0].href)}
                     aria-label={`${buttonLinks[0].title} button`}
                   >
@@ -110,7 +112,9 @@ const Home = () => {
                     mt={2}
                     bgColor={buttonLinks[1].backgroundColor}
                     color="white.100"
-                    _hover={{ bg: buttonLinks[1].hoverBgColor }}
+                    borderRadius="2px"
+                    _hover={{ bg: buttonLinks[1].hoverBgColor, borderRadius: "5px" }}
+                    transition=".3s ease"
                     onClick={() => redirectToUrl(buttonLinks[1].href)}
                     aria-label={`${buttonLinks[1].title} button`}
                     ml={2}

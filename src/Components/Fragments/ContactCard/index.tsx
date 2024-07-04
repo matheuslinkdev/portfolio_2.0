@@ -9,12 +9,12 @@ const ContactCard = () => {
       flexDir={{ base: "row", md: "column" }}
       justifyContent="space-between"
       alignItems="center"
-      textAlign="center"
+   
       w={{ base: "95%", md: "auto" }}
       gap={{ base: "", md: "1rem" }}
     >
       {contactArray.map((contact, index) => (
-        <Box key={index} title={contact.title} textAlign="center">
+        <Box key={index} title={contact.title}>
           <Center
             bgColor="blue.300"
             h="3rem"
