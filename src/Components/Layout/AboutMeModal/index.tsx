@@ -43,7 +43,7 @@ const AboutMeModal = () => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent w={430} maxW="95dvw" mt="10dvh" bgColor="#401905">
+        <ModalContent w={430} maxW="95dvw" mt="10dvh" bgColor="#98531b">
           <ModalCloseButton />
           <ModalBody>
             <Text mt={10} color="white.300">

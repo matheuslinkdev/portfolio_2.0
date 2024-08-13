@@ -8,7 +8,8 @@
   },
   "HomePage": {
     "introduction": "Hello, i'm Matheus Link",
-    "stack": "Front-End Developer",
+    "stack": "Full-Stack Developer",
+    "description": "I'm a Full-Stack Developer, building web-focused applications. I'm also a Freelancer—contact me, and let's see how I can help you!",
     "modalBtn": "About Me",
     "modalContent": "I am 19 years old, majoring in Computer Science, and have been studying programming since 2023, when I started learning logic and algorithms using VisualG. I've always been into the world of technology but never knew where to go until a cousin already established in the field recommended programming to me, and since then, I've been striving every day to become a Developer and above all, a successful person!🚀",
     "modalClose": "Close"
@@ -18,7 +19,7 @@
     "ProjectsLabel": "Here you can see some projects that i've built during this journey.",
     "projectLanguage": "Project Language:",
     "F1Roster": "A site where users can consult information about the current Formula 1 season, such as the schedule, driver standings, race results, and the drivers of the season. In this project, it was challenging to convert the XML data returned from an API to JSON, and it was also challenging to handle various types of data, format times based on the device's location, and make the page responsive and accessible.",
-    "Polyngo": "A fictional educational institution website built with React, Node, and Express. Users can consult taught languages, courses, and perform registration and login operations. It was challenging to handle the necessary operations, data retrieval, and validation for registration and login. I am currently facing issues with CORS policies in this application, so you might encounter some problems.",
+    "brnetwork": "Networking site for the technology field. The site focuses on helping people find technology events, providing opportunities to strengthen their connections. Events can be freely registered as long as you have an active account. The site is being built using Next.js, TypeScript, and Chakra UI for the Front End, and Firebase for the database and authentication services.",
     "EcoMatters": "A fictional environmental organization website built with React, Vite, and using ContextAPI. Users can add products from the store to their cart, with the total sum of all added products being displayed and updated as the user adds items to the cart. This was one of my first projects using React JS, covering topics I had never used practically before and without the help of a tutorial. Certainly, this project helped me understand some fundamental topics of React JS.",
     "MovieVerse": "A movie website developed with React JS, featuring basic functionalities such as searching and adding or removing movies from the favorites list. I developed this project to practice basic React JS concepts, such as API consumption, using Context API, and navigation using the react-router-dom library. There are some functionalities I might implement soon, but for now, that's all it has.",
     "ChatBase": "A Chat project developed with React JS, Firebase, and Zustand. In it, users can enjoy the basic functionalities of a Chat application, such as sending messages, sending images, adding conversations, and blocking users. This project was built following a tutorial, and it was challenging to understand all the necessary Firebase functionalities for this project, such as authentication, chat creation, and sending messages and images. Certainly, this project helped me understand a technology that I aim to delve deeper into.",

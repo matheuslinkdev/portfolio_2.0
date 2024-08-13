@@ -69,7 +69,7 @@ const Home = () => {
       >
         <Box
           px="10px"
-          w={450}
+          w={600}
           maxWidth="100%"
           display="flex"
           flexWrap="wrap"
@@ -80,8 +80,8 @@ const Home = () => {
           <Text fontSize="3xl" fontWeight={600}>
             {t("HomePage.introduction")}
           </Text>
-          <Text fontSize="2xl" fontWeight={500} color="blue.300" mt={2}>
-            {t("HomePage.stack")}
+          <Text fontSize="lg" fontWeight={500} color="blue.400" mt={2}>
+            {t("HomePage.description")}
           </Text>
           <Flex
             width="100%"

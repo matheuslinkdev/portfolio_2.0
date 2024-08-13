@@ -1,7 +1,6 @@
 import {
   DiHtml5,
   DiCss3,
-  DiSass,
   DiNodejsSmall,
   DiGithubBadge,
   DiGit,
@@ -24,10 +23,6 @@ const skillsArray = [
     title: "CSS3",
   },
   {
-    icon: DiSass,
-    title: "Sass",
-  },
-  {
     icon: BiLogoJavascript,
     title: "JavaScript",
   },
@@ -35,6 +30,10 @@ const skillsArray = [
     icon: BiLogoTypescript,
     title: "TypeScript",
   },
+  // {
+  //   icon: DiGo,
+  //   title: "Golang",
+  // },
   {
     icon: DiReact,
     title: "React",
